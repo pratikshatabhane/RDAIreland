@@ -347,34 +347,80 @@ section{
     padding:1rem 0;
 }
 
-.icons-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap:4.5rem;
-}
 
-.icons-container .icons{
+.mvv-container{
+    max-width: 90%;
+    margin: 50px auto 0;
+}
+.mvv-container .mvv-block
+{
+    margin-bottom: 30px;
     display: flex;
-    align-items:flex-start;
-    gap:1.5rem;
-    padding:3rem 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.mvv-container .mvv-block .image{
+    flex: 0 0 auto;
+    width: 400px;
+    
+}
+.mvv-container .mvv-block .image img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .3 );
+    transition: .3s;
+    transform :scale(1)
+
+}
+.mvv-container .mvv-block .image:hover img
+{
+    transform: scale(1.05);
+}
+.mvv-container .mvv-block .content{
+    flex: 0 0 auto;
+    width: calc(100% - 400px);
+    box-sizing: border-box;
+    align-items: center;
+}
+.mvv-container .mvv-block h5{
+    font-weight: 700;
+    font-size: 32px;
+    color: green;
+    margin: 10px;
+}
+.mvv-container .mvv-block .content p{
+    font-size: 15px;
+
+
 }
 
-.icons-container .icons i{
-    font-size: 5.5rem;
-    color:var(--green);
+
+@media screen and (min-width: 1024px)
+{
+    .mvv-container .mvv-block:nth-child(odd) .image
+    {
+        order: 1;
+    }
+    .mvv-container .mvv-block:nth-child(even) .image
+    {
+        order: 2;
+        padding-right: 30px;
+    }
+    .mvv-container .mvv-block:nth-child(odd) .content
+    {
+        order:2;
+        padding-left: 30px;
+    }
+    
+    .mvv-container .mvv-block:nth-child(even) .content
+     {
+        order:1;
+        padding-left: 30px;
+    }
 }
 
-.icons-container .icons h3{
-    font-size: 3.2rem;
-    color:var(--black);
-    padding-bottom: .5rem;
-}
 
-.icons-container .icons p{
-    font-size: 1.7rem;
-    color:var(--light-color);
-}
+
 
 .featured .featured-slider .box{
     margin:2rem 0;
@@ -468,7 +514,7 @@ section{
 }
 
 .newsletter{
-    background:url(../image/Green\ landscape\ for\ 30%\ Recycled\ Content\ page.jpg) no-repeat;
+    background:url(../image/Green\ landscape.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -792,4 +838,9 @@ section{
         font-size: 50%;
     }
 
+}
+/*----------about us page----------*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
 }
