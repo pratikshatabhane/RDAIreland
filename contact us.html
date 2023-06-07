@@ -2,217 +2,363 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <title>Responsive Contact Us Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="1contactform.css">
     <style>
-        *{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  box-sizing: border-box;
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Peta', sans-serif;
+    box-sizing: border-box;
 }
 
-body{
-  background-color: #010112;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+.header .header-2{
+    background:green;
 }
 
-.contact-page{
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
+.header .header-2 .navbar{
+    text-align:left;
 }
 
-.contact-page-title{
-  position: relative;
-  text-transform: uppercase;
-  text-align: center;
+
+.header .header-2 .navbar a{
+    color:#fff;
+    display:inline-table;
+    padding:1.0rem;
+    font-size: 1.5rem;
 }
 
-.back-title{
-  text-align: center;
-  -webkit-text-stroke: 1px #ffffff12;
-  color: transparent;
-  font-size: 110px;
-  letter-spacing: 6px;
+.header .header-2 .navbar a:hover{
+    background:var(--dark-color);
 }
 
-.front-title{
-  color: #f1f1f1;
-  font-weight: 900;
-  font-size: 50px;
-  transform: translateY(-95px);
+.header .header-2.active{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(image/bgg4.jpg);
+    background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 46px;
+    font-weight: 500;
+    color: hsl(0, 0%, 5%);
+    margin-left: 20px;
+    justify-content: space-around;
+
+}
+.contact .content p{
+    font-weight: 300;
+    color: #100f0f;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text h3{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(236, 243, 237);
+    /* flex-direction: column; */
+    font-weight: 500;
+}
+.container .contactInfo .box .text p{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    /* flex-direction: column; */
+    font-weight: 300;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #0f20e2;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: hsl(131, 93%, 38%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
 }
 
-.front-title span{
-  color:#068833;
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
 }
 
-.contact-boxes{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.footer .box-container .box h3{
+    font-size: 1.4rem;
+    color:green;
+    padding:1rem 0;
 }
 
-.contact-box{
-  background-color: #ffffff12;
-  padding: 20px;
-  border-radius: 3px ;
-  border-left: 2px solid#068833;
-  width: 100%;
-  max-width: 360px;
-  margin-bottom: 40px;
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.2rem;
+    color:green;
+    padding:1rem 0;
 }
 
-.box-title{
-  font-size: 20px;
-  color: #fff;
-  margin-bottom: 10px;
+.footer .box-container .box a i{
+    color:var(--green);
+    padding-right: .5rem;
 }
 
-.box-icon{
- 
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  justify-content:space-e
-  line-height: 30px;
-  font-size: 18px;
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
 }
 
-.box-content{
-  color: #858585;
-  font-size: 14px;
-  font-weight: 500;
+.footer .box-container .box .map{
+    width:100%;
 }
 
-.contact-form{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.footer .share{
+    padding:1rem 0;
+    text-align: center;
 }
 
-input{
-  width: 100%;
-  margin-bottom: 10px;
-  background: #ffffff12;
-  padding: 14px;
-  color: #fff;
-  border: 0;
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--green);
+    margin:0 .3rem;
+    border-radius: 50%; 
 }
 
-textarea{
-  width: 100%;
-  margin-bottom: 10px;
-  background: #ffffff12;
-  padding: 14px;
-  color: #fff;
-  border: 0;
-  resize: none;
-  height: 160px;
+.footer .share a:hover{
+    background:var(--black);
 }
 
-input::placeholder{
-  color: #888;
+.footer .credit{
+    border-top: var(--border);
+    margin-top: 2rem;
+    padding:0 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color:var(--light-color);
+    text-align: center;
 }
 
-.nameInput,.emailInput{
-  width: calc(50% - 5px);
-}
-
-.nameInput{
-  border-top-left-radius: 10px;
-}
-
-.emailInput{
-  border-top-right-radius: 10px;
-}
-
-.sendbtn{
-  background-color: #068833;
-  border-radius: 0 0 10px 10px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 500;
-  transition: .3s linear;
-}
-
-.sendbtn:hover{
-  opacity: .7;
-}
-
-@media screen and (max-width:1200px) {
-  .contact-box{
-      max-width: 100%;
-  }
-
-  .nameInput,.emailInput{
-      width: 100%;
-      border-radius: 0;
-  }
-
-  .nameInput{
-      border-radius: 10px 10px 0 0;
-  }
+.footer .credit span{
+    color:var(--green);
 }
     </style>
-
 </head>
 <body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="contact-page">
-        <h1 class="contact-page-title">
-            <div class="back-title">Contact</div>
-            <div class="front-title">Get In <span>Touch</span></div>
-        </h1>
+  
+  <div class="content">
+    <h2><b>Contact Us</b></h2>
+  </div>
+                      
+<header class="header">
 
-        <div class="contact-boxes">
-            <div class="contact-box">
-                <h2 class="box-title"><i class="box-icon fas fa-location-pin"></i>Location</h2>
-                <div class="box-content">
-                    Ireland, UK <br>
-                    
+
+  <div class="header-2">
+      
+      <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="about.html">about</a>
+          <a href="services.html">services</a>
+          <a href="shop.html">Shop</a>
+          <a href="Industries.html">Industries</a>
+          <a href="Why Choose Fibc's.html">Why Choose FIBC's</a>
+          <a href="contact us.html">Contact Us</a>
+      </nav>
+  </div>
+
+</header>
+
+<!-- header section ends -->
+    <section class="contact">
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+        <div class="content">
+            <h2><b>Contact Us</b></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil odit adipisci illo inventore eum, corrupti commodi delectus.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                </div>
+                    </div>
                 </div>
             </div>
-            <div class="contact-box">
-                <h2 class="box-title"><i class="box-icon fas fa-envelope"></i>Email</h2>
-                <div class="box-content">
-                  info@rda-ireland.ie
-                </div>
-            </div>
-            <div class="contact-box">
-                <h2 class="box-title"><i class="box-icon fas fa-phone"></i>Phone</h2>
-                <div class="box-content">
-                  tel:03003730194
-                </div>
+            </section>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <br>
+                    <br>
+
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Eamil</span>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="inputBox">
+                        <textarea name="" id="" required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
             </div>
         </div>
+    </section>
+    
+<!-- footer section starts  -->
 
+<section class="footer">
 
-        <form action="" class="contact-form">
-            <input type="text" class="nameInput" placeholder="Name">
-            <input type="email" class="emailInput" placeholder="Email">
-            <input type="text" class="subjectInput" placeholder="Subject">
-            <textarea  class="msgArea" placeholder="Your Message"></textarea>
-            <input type="submit" class="sendbtn" placeholder="Send Message">
-        </form>
+    <div class="box-container">
+
+        
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>services</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>products</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+        </div>
+
+        <div class="box">
+            <h3>Extra Links</h3>
+           
+            <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+           
+            <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+        </div>
+
+        <div class="box">
+            <h3>Contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Ireland </a>
+            <a href="#"> <i class="fas fa-envelope"></i>info@rda-ireland.ie</a>
+            <img src="image/worldmap.png" class="map" alt="">
+        </div>
+        
     </div>
-</body>
 
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="credit"> Created by <span> 2023 RDA Bulk Packaging Ireland Ltd</span></div>
+
+</section>
+
+<!-- footer section ends -->
+</body>
 </html>
