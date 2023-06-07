@@ -46,6 +46,7 @@
     }
 }
 .logo h3{
+    font-size: 30px;
     font-weight: bold;
 }
 @media screen and (max-width:420px){
@@ -64,6 +65,34 @@
 }
 /* navbar top */
 
+.header .header-2{
+    background:var(--green);
+}
+
+.header .header-2 .navbar{
+    text-align:left;
+}
+
+
+.header .header-2 .navbar a{
+    color:#fff;
+    display:inline-block;
+    padding:1.0rem;
+    font-size: 1.7rem;
+}
+
+.header .header-2 .navbar a:hover{
+    background:var(--dark-color);
+}
+
+.header .header-2.active{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+
+}
+
+
 /* main content */
 .main-content{
     width: 100%;
@@ -74,9 +103,7 @@
 }
 
 /* navbar */
-#navbar-color{
-    background-color: rgb(44, 157, 63);
-}
+
 .navbar-nav{
     margin: auto;
 }
@@ -191,6 +218,30 @@
     </div>
     <!-- navbar top -->
 
+<!-- header section starts  -->
+
+<header class="header">
+
+
+    <div class="header-2">
+        
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="about.html">about</a>
+            <a href="services.html">services</a>
+            <a href="shop.html">Shop</a>
+            <a href="industries&products">Industries & Products</a>
+            <a href="Why Choose Fibc's.html">Why Choose FIBC's</a>
+            <a href="contact us.html">Contact Us</a>
+        </nav>
+    </div>
+  
+  </header>
+  
+  <!-- header section ends -->
+  
+
+  
     <!-- main content -->
     <div class="main-content">
         <nav class="navbar navbar-expand-md" id="navbar-color">
@@ -221,12 +272,7 @@
                  <br>has been trading for over 23 years.Our core business 
                  <br>is the importation and supply of Flexible Intermediate 
                  <br>Bulk Containers (FIBC's),otherwise known as bulk bags,
-                  <br>tote bags or tay bags.From the very early years in 
-                  <br> business we have continually re-invested and driven 
-                 <br>our business to grow the markets and products we supply 
-                 <br> and now successfully supply products to customers in
-                 <br> agricultural, chemical, recycling, waste management, building and
-                 <br> building and many more business sectors.</p>
+                  <br>tote bags or tay bags.</p>
             <div id="btn1"><button>EXPLORE</button></div>
           </div>
         
