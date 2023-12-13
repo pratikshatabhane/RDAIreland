@@ -41,7 +41,7 @@ html {
 
 /*----global ----*/
 header {
-  background-image: url("../image/back.jpg");
+  
   background-size: cover;
   height: 100%;
 }
@@ -150,7 +150,7 @@ header .home .item {
 
 header .home .item a {
   font-size: 20px;
-  color: #12B0BB;
+  color: #efe6e6;
   opacity: 0.8;
 }
 
@@ -235,8 +235,10 @@ header .home .item .item_box:hover img {
   }
 
   /*---------------header--------*/
+
+
   header {
-    background-image: url("../image/back.jpg");
+   
     background-size: cover;
     height: 100vh !important;
   }
