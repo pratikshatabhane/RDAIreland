@@ -34,83 +34,97 @@
 .all-content{
     background: #f6f5f4;
 }
-/* navbar */
-#navbar{
-    background-color: #fff;
-    padding-left: 80px;
+
+.header .header-0{
+    background:#fff;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items:end;
+   justify-content:space-between;
+
+}
+.header .header-0 .logo{
+    align-items:start;
+    justify-content:space-between;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--black);
+}
+
+.header .header-0 .logo a{
+    align-items:start;
+    justify-content:left;
+    color:var(--green);
+}
+
+.header .header-1{
+    background:#ffffff;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items:end;
+
+}
+
+
+.header .header-1 .search-form input{
+    font-size: 1.6rem;
+    padding:0 2.2rem;
+    height:50%;
+    width:100%;
+    text-transform: none;
+    color:var(--black);
+}
+
+
+
+nav{
+    position:sticky;
+    z-index: 99;
+    width: 100%;
+   background: #1d9738;
+  }
+  nav .wrapper{
+    position: sticky;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+  }
+  
+  .wrapper .nav-links{
+    display: inline-flex;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  nav input{
+    display: none;
+  }
+
+.logo h3{
+    font-size: 30px;
     font-weight: bold;
    
 }
-#logo{
-    font-size: 23px;
-    color: white;
-}
-#logo img{
-    margin-bottom: 15px;
-    font-size: 80px;
-    font-weight: 400;
-}
-.navbar-nav{
-    margin-left: 10px;
-}
-.nav-link{
-    color: white;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px black;
-    margin-left: 15px;
-    transition: 0.5s ease;
-}
-.nav-link:hover{
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 1px;
-}
-.icons{
-    margin-left: 30px;
-}
-.icons img{
-    margin-left: 10px;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-.icons img:hover{
-    transform: translateY(-5px);
-}
-@media screen and (max-width:330px){
-    #logo{
-        font-size: 15px;
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+        
     }
 }
-/* navbar end */
-
-    
-.header .header-2{
-        background:var(--green);
-    }
-    
-    .header .header-2 .navbar{
-        text-align:left;
-        width: 50%;
-    }
-    
-    
-    .header .header-2 .navbar a{
-        color:#fff;
-        display:inline-table;
-        padding:0.4rem;
-        font-size: 1.5rem;
-    }
-    
-    .header .header-2 .navbar a:hover{
-        background:var(--dark-color);
-    }
-    
-    .header .header-2.active{
-        position:fixed;
-        top:0; left:0; right:0;
-        z-index: 1000;
-    
-    }
     
 /* home section */
 .home{
@@ -368,44 +382,50 @@ html{
 <body>
     <!-- header section starts  -->
 
-<header class="header">
+ <header class="header">
 
     <div class="header-0">
-
+       
         <a href="#" class="logo"><img src="images/rda logo.png" alt=""></a>
         <div class="header-1">
-
         <form action="" class="search-form">
             <input type="search" name="" placeholder="search here..." id="search-box">
-            <label for="search-box" class="fas fa-search"></label>
-        </form>
-
-        <div class="icons">
-            <div id="search-btn" class="fas fa-search"></div>
-            
-            
-            <div id="login-btn" class="fas fa-user"></div>
-        </div>
-
+           </form>
+  
+       
     </div>
-</div>
-
-    <div class="header-2">
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="Shop page.html">Shop</a>
-            <a href="Industries.html">Industries</a>
+  </div>
+  
+   <div class="header-2">
+        
+    <nav>
+        <div class="wrapper">
+         
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
           
-            <a href="contact us.html">Contact Us</a>
-        </nav>
-    </div>
-
-</header>
-
-<!-- header section ends -->
-
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="about.html" class="desktop-item">About</a>
+            </li>
+            <li>
+              <a href="services.html" class="desktop-item">Services</a>
+             </li>
+            <li>
+              <a href="Industries.html" class="desktop-item">Industries</a>
+             
+             </li>
+              <li><a href="#" class="desktop-item">All Products</a></li>
+             
+              <li><a href="contact us.html">Contact Us</a></li>
+       
+         
+        </div>
+      </nav>
+  </header>
+  
+  <!-- header section ends -->
 
         <!-- home section -->
         <div class="home">

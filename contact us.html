@@ -15,32 +15,98 @@
     box-sizing: border-box;
 }
 
-.header .header-2{
-    background:#4CAF50;
-}
 
-.header .header-2 .navbar{
-    text-align:left;
-}
-
-
-.header .header-2 .navbar a{
-    color:#fff;
-    display:inline-table;
-    padding:1.0rem;
-    font-size: 1.5rem;
-}
-
-.header .header-2 .navbar a:hover{
-    background:var(--dark-color);
-}
-
-.header .header-2.active{
-    position:fixed;
-    top:0; left:0; right:0;
-    z-index: 1000;
+.header .header-0{
+    background:#fff;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items:end;
+   justify-content:space-between;
 
 }
+.header .header-0 .logo{
+    align-items:start;
+    justify-content:space-between;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--black);
+}
+
+.header .header-0 .logo a{
+    align-items:start;
+    justify-content:left;
+    color:var(--green);
+}
+
+.header .header-1{
+    background:#ffffff;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items:end;
+
+}
+
+
+.header .header-1 .search-form input{
+    font-size: 1.6rem;
+    padding:0 2.2rem;
+    height:50%;
+    width:100%;
+    text-transform: none;
+    color:var(--black);
+}
+
+
+
+nav{
+    position:sticky;
+    z-index: 99;
+    width: 100%;
+   background: #1d9738;
+  }
+  nav .wrapper{
+    position: sticky;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+  }
+  
+  .wrapper .nav-links{
+    display: inline-flex;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  nav input{
+    display: none;
+  }
+
+.logo h3{
+    font-size: 30px;
+    font-weight: bold;
+   
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+        
+    }
+}
+
 .contact{
     position: relative;
     min-height: 100vh;
@@ -165,7 +231,6 @@
     padding: 10px;
     font-size: 18px;
 }
-
 .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -173,21 +238,21 @@
 }
 
 .footer .box-container .box h3{
-    font-size: 1.4rem;
-    color:green;
+    font-size: 2.2rem;
+    color:#0d0d0d;
     padding:1rem 0;
 }
 
 .footer .box-container .box a{
     display: block;
     font-size: 1.2rem;
-    color:green;
-    padding:1rem 0;
+    color:#0fa60a;
+    padding:0.5rem;
 }
 
 .footer .box-container .box a i{
     color:var(--green);
-    padding-right: .5rem;
+    padding-right: 2.5rem;
 }
 
 .footer .box-container .box a:hover i{
@@ -215,58 +280,72 @@
 }
 
 .footer .share a:hover{
-    background:var(--black);
+    background:var(--green);
 }
 
 .footer .credit{
     border-top: var(--border);
     margin-top: 2rem;
-    padding:0 1rem;
+  
     padding-top: 2.5rem;
     font-size: 2rem;
-    color:var(--light-color);
+    color:#0fa60a;
     text-align: center;
 }
 
 .footer .credit span{
-    color:var(--green);
+    color:#5c5959;
 }
     </style>
 </head>
 <body>
   
-    <header class="header">
+     <!-- header section starts  -->
 
-        <div class="header-0">
-      
-            <a href="#" class="logo"><img src="images/rda logo.png" alt=""></a>
-            <div class="header-1">
-      
-            <form action="" class="search-form">
-                <input type="search" name="" placeholder="search here..." id="search-box">
-               
-            </form>
-      
+ <header class="header">
+
+    <div class="header-0">
+       
+        <a href="#" class="logo"><img src="images/rda logo.png" alt=""></a>
+        <div class="header-1">
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+           </form>
+  
+       
+    </div>
+  </div>
+  
+   <div class="header-2">
+        
+    <nav>
+        <div class="wrapper">
+         
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
           
-      
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="about.html" class="desktop-item">About</a>
+            </li>
+            <li>
+              <a href="services.html" class="desktop-item">Services</a>
+             </li>
+            <li>
+              <a href="Industries.html" class="desktop-item">Industries</a>
+             
+             </li>
+              <li><a href="#" class="desktop-item">All Products</a></li>
+             
+              <li><a href="contact us.html">Contact Us</a></li>
+       
+         
         </div>
-      </div>
-      
-        <div class="header-2">
-            <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="Shop page.html">Shop</a>
-                <a href="Industries.html">Industries</a>
-              
-                <a href="contact us.html">Contact Us</a>
-            </nav>
-        </div>
-      
-      </header>
-      
-      <!-- header section ends -->
+      </nav>
+  </header>
+  
+  <!-- header section ends -->
 
     <section class="contact">
         <br>
@@ -322,53 +401,53 @@
         </div>
     </section>
     
+  
 <!-- footer section starts  -->
 
 <section class="footer">
 
     <div class="box-container">
-
-        
-
+  
+       
+  
         <div class="box">
-            <h3>Quick Links</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> about </a>
+            <h3>quick links</h3>
+            <a href="#"> <i class="fa-arrow-right"></i>home</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>about</a>
             <a href="#"> <i class="fas fa-arrow-right"></i>services</a>
             <a href="#"> <i class="fas fa-arrow-right"></i>products</a>
             <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
         </div>
-
+  
         <div class="box">
-            <h3>Extra Links</h3>
+            <h3>extra links</h3>
            
-            <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
            
             <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+   
         </div>
-
-        <div class="box">
-            <h3>Contact info</h3>
+            <div class="box">
+            <h3>contact info</h3>
             <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Ireland </a>
+            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
             <a href="#"> <i class="fas fa-envelope"></i>info@rda-ireland.ie</a>
-            <img src="image/worldmap.png" class="map" alt="">
-        </div>
+            
         
     </div>
-
+  
     <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
+        <a href="https://www.facebook.com/RDABulkPackagingIrelandLtd" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/home" class="fab fa-twitter"></a>
+        <a href="https://l.instagram.com/?u=http%3A%2F%2Frda-ireland.ie%2F&e=AT2SZzFvFHXNN4SdjpMH1cQmy5M96xv3xvvZqL-jGaNUOIgULUNDN3-SkPDcuzH-wAyhZAJOSywjo64SUc_alnsQ8XWAs85iAraRvXs" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/company/90670731/admin/feed/posts/" class="fab fa-linkedin"></a>
         <a href="#" class="fab fa-pinterest"></a>
     </div>
-
-    <div class="credit"> Created by <span> 2023 RDA Bulk Packaging Ireland Ltd</span></div>
-
-</section>
-
-<!-- footer section ends -->
+  
+    <div class="credit"> Created by <span> <br>2023 RDA Bulk Packaging Ireland Private Limited all rights reserved! </div>
+  
+  </section>
+  
+  <!-- footer section ends -->
 </body>
 </html>

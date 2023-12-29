@@ -22,81 +22,111 @@
     margin: 0;
     padding: 0;
 }
+.header .header-0{
+    background:#fff;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items:end;
+   justify-content:space-between;
 
-/* navbar top */
-.navbar-top{
-    width: 100%;
-    height: 5vh;
-    display: inline-block;
-    align-items: center;
-    text-align: center;
 }
-.social-link i img{
-    margin-left: 10px;
-    transition: 0.5s ease;
+.header .header-0 .logo{
+    align-items:start;
+    justify-content:space-between;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--black);
+}
+
+.header .header-0 .logo a{
+    align-items:start;
+    justify-content:left;
+    color:var(--green);
+}
+
+.header .header-1{
+    background:#ffffff;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items:end;
+
+}
+
+
+.header .header-1 .search-form input{
+    font-size: 1.6rem;
+    padding:0 2.2rem;
+    height:50%;
+    width:100%;
+    text-transform: none;
+    color:var(--black);
+}
+
+.header .header-1 .search-form label{
+    font-size: 2.5rem;
+    padding-right: 1.5rem;
+    color:var(--black);
     cursor: pointer;
 }
-.social-link i img:hover{
-    background-color: rgb(44, 157, 63);
-    border-radius: 50px;
+
+.header .header-1 .search-form label:hover{
+    color:var(--green);
 }
-@media screen and (max-width:420px){
-    .social-link i img{
-        width: 20px;
-    }
+#search-btn{
+    display:none;
 }
+
+
+nav{
+    position:sticky;
+    z-index: 99;
+    width: 100%;
+  
+    background: #1d9738;
+  }
+  nav .wrapper{
+    position: sticky;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 50px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+  }
+  
+  .wrapper .nav-links{
+    display: inline-flex;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  nav input{
+    display: none;
+  }
+
 .logo h3{
     font-size: 30px;
     font-weight: bold;
+   
 }
 @media screen and (max-width:420px){
     .logo h3{
         font-size: 20px;
+        
     }
 }
-.icons i img{
-    margin-left: 10px;
-    cursor: pointer;
-}
-@media screen and (max-width:420px){
-    .icons i img{
-        width: 20px;
-    }
-}
-/* navbar top */
 
-.header .header-2{
-    background: #4CAF50;
-    width: 100%;
-    white-space: 100%;
-	font-size: 14px;
-	text-transform: uppercase
-   
-}
-
-.header .header-2 .navbar{
-    text-align:left;
-    width: 50%;
-}
-
-
-.header .header-2 .navbar a{
-    color:#fff;
-    display:inline-block;
-    padding:0.1rem;
-    font-size: 1.2rem;
-}
-
-.header .header-2 .navbar a:hover{
-    background:var(--dark-color);
-}
-
-.header .header-2 .active{
-    position:fixed;
-    top:0; left:0; right:0;
-    z-index: 1000;
-
-}
 
 
 /* main content */
@@ -107,15 +137,6 @@
     background-size: cover;
     background-position: 70%;
 }
-
-/* navbar */
-
-.navbar-nav{
-    margin: 5px;
-    padding:1.0rem;
-}
-
-/* navbar */
 
 /* content */
 .content{
@@ -196,43 +217,61 @@
 </head>
 <body>
     
-      
-<header class="header">
+
+
+ <!-- header section starts  -->
+
+ <header class="header">
 
     <div class="header-0">
-  
+       
         <a href="#" class="logo"><img src="images/rda logo.png" alt=""></a>
         <div class="header-1">
-  
         <form action="" class="search-form">
             <input type="search" name="" placeholder="search here..." id="search-box">
-           
+            <label for="search-box" class="fas fa-search"></label>
         </form>
-  
-      
-  
-    </div>
-  </div>
-  
-    <div class="header-2">
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="Shop page.html">Shop</a>
-            <a href="Industries.html">Industries</a>
-          
-            <a href="contact us.html">Contact Us</a>
-        </nav>
-    </div>
-  
-  </header>
-  
-  <!-- header section ends -->
-  
 
-  
-    <!-- main content -->
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+    </div>
+</div>
+
+   <div class="header-2">
+        
+    <nav>
+        <div class="wrapper">
+         
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+          
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="about.html" class="desktop-item">About</a>
+            </li>
+            <li>
+              <a href="services.html" class="desktop-item">Services</a>
+             </li>
+            <li>
+              <a href="Industries.html" class="desktop-item">Industries</a>
+             
+             </li>
+              <li><a href="#" class="desktop-item">All Products</a></li>
+             
+              <li><a href="contact us.html">Contact Us</a></li>
+       
+         
+        </div>
+      </nav>
+</header>
+
+<!-- header section ends -->
+   
+<!-- main content -->
     <div class="main-content">
         <nav class="navbar navbar-expand-md" id="navbar-color">
            <div class="container">

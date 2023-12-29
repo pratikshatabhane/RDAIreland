@@ -41,32 +41,95 @@
 
 
 
-.header-2{
-    background:var(--green);
-}
-
-.header-2 .navbar{
-    text-align:center;
-}
-
-
-.header-2 .navbar a{
-    color:#fff;
-    display: inline-block;
-    padding:1.2rem;
-    font-size: 1.7rem;
-}
-
-.header-2 .navbar a:hover{
-    background:var(--dark-color);
-}
-
-.header-2.active{
-    position:fixed;
-    top:0; left:0; right:0;
-    z-index: 1000;
+.header .header-0{
+    background:#fff;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items:end;
+   justify-content:space-between;
 
 }
+.header .header-0 .logo{
+    align-items:start;
+    justify-content:space-between;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--black);
+}
+
+.header .header-0 .logo a{
+    align-items:start;
+    justify-content:left;
+    color:var(--green);
+}
+
+.header .header-1{
+    background:#ffffff;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items:end;
+
+}
+
+
+.header .header-1 .search-form input{
+    font-size: 1.6rem;
+    padding:0 2.2rem;
+    height:50%;
+    width:100%;
+    text-transform: none;
+    color:var(--black);
+}
+
+
+
+nav{
+    position:sticky;
+    z-index: 99;
+    width: 100%;
+   background: #1d9738;
+  }
+  nav .wrapper{
+    position: sticky;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+  }
+  
+  .wrapper .nav-links{
+    display: inline-flex;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  nav input{
+    display: none;
+  }
+
+.logo h3{
+    font-size: 30px;
+    font-weight: bold;
+   
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+        
+    }
 .aboutus{
     background:#f3f3f3;
     display: flex;
@@ -103,92 +166,6 @@
     color:var(--light-color);
     font-size: 1.4rem;
     line-height: 2;
-}
-
-.footer .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap:1.5rem;
-}
-
-.footer .box-container .box h3{
-    font-size: 2.2rem;
-    color:var(--black);
-    padding:1rem 0;
-}
-
-.footer .box-container .box a{
-    display: block;
-    font-size: 1.4rem;
-    color:var(--light-color);
-    padding:1rem 0;
-}
-
-.footer .box-container .box a i{
-    color:var(--green);
-    padding-right: .5rem;
-}
-
-.footer .box-container .box a:hover i{
-    padding-right: 2rem;
-}
-
-.footer .box-container .box .map{
-    width:100%;
-}
-
-.footer .share{
-    padding:1rem 0;
-    text-align: center;
-}
-
-.footer .share a{
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    color:#fff;
-    background:var(--green);
-    margin:0 .3rem;
-    border-radius: 50%; 
-}
-
-.footer .share a:hover{
-    background:var(--black);
-}
-
-.footer .credit{
-    border-top: var(--border);
-    margin-top: 2rem;
-    padding:0 1rem;
-    padding-top: 2.5rem;
-    font-size: 2rem;
-    color:var(--light-color);
-    text-align: center;
-}
-
-.footer .credit span{
-    color:var(--green);
-}
-
-.loader-container{
-    position: fixed;
-    top:0; left: 0;
-    height:100%;
-    width: 100%;
-    z-index: 10000;
-    background:#f7f7f7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.loader-container.active{
-    display: none;
-}
-
-.loader-container img{
-    height:10rem;
 }
 
 
@@ -402,41 +379,60 @@ gtag("config", "G-SYB2RCMRQG");
 			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFTFGZQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		</noscript>
 		<!-- End Google Tag Manager (noscript) snippet added by Site Kit -->
-		    
-<!-- header section starts  -->
-
-<header class="header">
-        
-    <a href="#" class="logo">
-		  <img src="image/rda logo.png" alt=""></a>
-        <div class="header-1">
-<br>
-
-			<div class="header-2">
-        
-				<nav class="navbar">
-					<a href="RDA New tem website/index.html">Home</a>
-					<a href="about.html">about</a>
-					<a href="services.html">services</a>
-					<a href="Shop page.html">Shop</a>
-					<a href="Industries.html">Industries</a>
-				
-					<a href="contact us.html">Contact Us</a>
-				</nav>
-			</div>
 		
-		</header>
+ <!-- header section starts  -->
 
-	
-		<!-- header section ends -->
+ <header class="header">
 
+    <div class="header-0">
+       
+        <a href="#" class="logo"><img src="images/rda logo.png" alt=""></a>
+        <div class="header-1">
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+           </form>
+  
+       
+    </div>
+  </div>
+  
+   <div class="header-2">
+        
+    <nav>
+        <div class="wrapper">
+         
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+          
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="about.html" class="desktop-item">About</a>
+            </li>
+            <li>
+              <a href="services.html" class="desktop-item">Services</a>
+             </li>
+            <li>
+              <a href="Industries.html" class="desktop-item">Industries</a>
+             
+             </li>
+              <li><a href="#" class="desktop-item">All Products</a></li>
+             
+              <li><a href="contact us.html">Contact Us</a></li>
+       
+         
+        </div>
+      </nav>
+  </header>
+  
+  <!-- header section ends -->
 
 
 	
 
 		<div id="content" class="site-content">
 		<div class="ast-container">
-				<div data-elementor-type="wp-page" data-elementor-id="11130" class="elementor elementor-11130">
+				<div data-elementor-type="wp-page">
 									<section class="elementor-section elementor-top-section elementor-element elementor-element-58e265a elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="58e265a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
 							<div class="elementor-background-overlay"></div>
 							<div class="elementor-container elementor-column-gap-default">
@@ -454,7 +450,7 @@ gtag("config", "G-SYB2RCMRQG");
 				<div class="elementor-element elementor-element-13e4856 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="13e4856" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.16.0 - 20-09-2023 */
-.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">Need expert for </h2>		</div>
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default"></h2>		</div>
 				</div>
 				<div class="elementor-element elementor-element-8bdb0e6 elementor-widget elementor-widget-heading" data-id="8bdb0e6" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -465,23 +461,11 @@ gtag("config", "G-SYB2RCMRQG");
 			<style>/*! elementor - v3.16.0 - 20-09-2023 */
 .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>Top attachments Bulk Bags serves a specific purpose </p>						</div>
 				</div>
-				<div class="elementor-element elementor-element-b827fb0 elementor-widget__width-initial elementor-mobile-align-justify elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="b827fb0" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-wobble-vertical" href="mailto:”info@rdapackaging.com”">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-icon elementor-align-icon-right">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-chart-line" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"></path></svg>			</span>
-						<span class="elementor-button-text">GET A QUOTE</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
+				<div class="elementor-element elementor-element-75932db elementor-widget elementor-widget-image" data-id="75932db" data-element_type="widget" data-widget_type="image.default">
+					<div class="elementor-widget-container">
+						<img decoding="async" width="1500" height="120" src="image/std bags.jpg" class="attachment-large size-large wp-image-2777" alt="RDA_Packaging" srcset="image/std bags.jpg 1024w, image/std bags.jpg 300w, image/std bags.jpg 768w, image/std bags.jpg 20w, image/std bags.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" ></div>
 					</div>
-		</div>
-							</div>
-		</section>
+				
 				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7de3169 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="7de3169" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7cd00f0" data-id="7cd00f0" data-element_type="column">
@@ -653,51 +637,7 @@ gtag("config", "G-SYB2RCMRQG");
 
 							
 
-<!-- footer section starts  -->
 
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>our locations</h3>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Ireland </a>
-            
-            
-        </div>
-
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i>home</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>about</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>services</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>products</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
-        </div>
-
-        <div class="box">
-            <h3>contact info</h3>
-            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-            <a href="#"> <i class="fas fa-envelope"></i>info@rda-ireland.ie</a>
-            <img src="image/worldmap.png" class="map" alt="">
-        </div>
-        
-    </div>
-
-    <div class="share">
-        <a href="https://www.facebook.com/RDABulkPackagingIrelandLtd" class="fab fa-facebook-f"></a>
-        <a href="https://twitter.com/home" class="fab fa-twitter"></a>
-        <a href="https://l.instagram.com/?u=http%3A%2F%2Frda-ireland.ie%2F&e=AT2SZzFvFHXNN4SdjpMH1cQmy5M96xv3xvvZqL-jGaNUOIgULUNDN3-SkPDcuzH-wAyhZAJOSywjo64SUc_alnsQ8XWAs85iAraRvXs" class="fab fa-instagram"></a>
-        <a href="https://www.linkedin.com/company/90670731/admin/feed/posts/" class="fab fa-linkedin"></a>
-        <a href="#" class="fab fa-pinterest"></a>
-    </div>
-
-    <div class="credit"> created by <span> 2023 RDA Bulk Packaging Ireland Private Limited</span> | all rights reserved! </div>
-
-</section>
-
-<!-- footer section ends -->
 
 
 
