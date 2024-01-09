@@ -15,173 +15,197 @@
 	 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
 	<!-- This site is optimized with the Yoast SEO plugin v21.3 - https://yoast.com/wordpress/plugins/seo/ -->
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
-
-:root{
-    --green:#278c51;
-    --dark-color:rgb(33, 145, 80)35
-    --black:#444;
-    --light-color:#666;
-    --border:.1rem solid rgba(0,0,0,.1);
-    --border-hover:.1rem solid var(--black);
-    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-}
-
-*{
-    font-family: 'Poppins', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition:all .2s linear;
-    transition:width none;
-}
-
-.Hcard {
-   background-color:#219321d9;
-    border-radius: 110px;
-    box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.2);
-    
-    margin: 2px;
-    max-width: 410px;
-    padding: 10px;
-    text-align:center;
-    transition: transform 0.2s ease-in-out;
-}
-
-
-.header .header-0{
-    background:#fff;
-    padding:1.5rem 9%;
-    display: flex;
-    align-items:end;
-   justify-content:space-between;
-
-}
-.header .header-0 .logo{
-    align-items:start;
-    justify-content:space-between;
-    font-size: 2.5rem;
-    font-weight: bolder;
-    color:var(--black);
-}
-
-.header .header-0 .logo a{
-    align-items:start;
-    justify-content:left;
-    color:var(--green);
-}
-
-.header .header-1{
-    background:#ffffff;
-    padding:1.5rem 9%;
-    display: flex;
-    align-items:end;
-
-}
-
-
-.header .header-1 .search-form input{
-    font-size: 1.6rem;
-    padding:0 2.2rem;
-    height:50%;
-    width:100%;
-    text-transform: none;
-    color:var(--black);
-}
-
-
-
-nav{
-    position:sticky;
-    z-index: 99;
-    width: 100%;
-   background: #1d9738;
-  }
-  nav .wrapper{
-    position: sticky;
-    max-width: 1300px;
-    padding: 0px 30px;
-    height: 70px;
-    line-height: 70px;
-    margin: auto;
-    display: flex;
-    align-items: self-start;
-    justify-content: space-between;
-  }
-  
-  .wrapper .nav-links{
-    display: inline-flex;
-  }
-  .nav-links li{
-    list-style: none;
-  }
-  .nav-links li a{
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 9px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-  }
-  nav input{
-    display: none;
-  }
-
-.logo h3{
-    font-size: 30px;
-    font-weight: bold;
-   
-}
-@media screen and (max-width:420px){
-    .logo h3{
-        font-size: 20px;
-        
-    }
-
-
-.aboutus{
-    background:#f3f3f3;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap:1.5rem;
-}
-
-.aboutus .content{
-    flex:1 1 42rem;
-}
-
-.aboutus .image{
-    flex:1 1 42rem;
-}
-
-.aboutus .image img{
-    width: 100%;
-}
-
-.aboutus .content h3{
-    color:var(--green);
-    font-size: 2.5rem;
-    padding-bottom: .5rem;
-}
-
-.aboutus .content h1{
-    color:var(--black);
-    font-size: 4rem;
-}
-
-.aboutus .content p{
-    padding:1rem 0;
-    color:var(--light-color);
-    font-size: 1.4rem;
-    line-height: 2;
-}
-
-</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+	
+	:root{
+		--green:#278c51;
+		--dark-color:rgb(33, 145, 80)35
+		--black:#444;
+		--light-color:#666;
+		--border:.1rem solid rgba(0,0,0,.1);
+		--border-hover:.1rem solid var(--black);
+		--box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+	}
+	
+	*{
+		font-family: 'Poppins', sans-serif;
+		margin:0; padding:0;
+		box-sizing: border-box;
+		outline: none; border:none;
+		text-decoration: none;
+		text-transform: capitalize;
+		transition:all .2s linear;
+		transition: none;
+	}
+	
+	
+	.Hcard {
+		background-color: #e7e0e0e2;
+		border-radius: 110px;
+		box-shadow: 0px 15px 35px rgba(30, 31, 30, 0.814);
+		justify-content: space-around; /* Adjust the spacing between cards */
+		margin: 2px;
+		max-width: 400px;
+		padding: 50px;
+		text-align:start;
+	   
+	}
+	
+	.Hcard h1{
+		font-size: 52px;
+		font-weight: bold;
+		color: #000;
+	}
+	.banner{
+		width: 100%;
+		height: 100vh;
+		background: url("image/back.jpg");
+		background-size: cover;
+		background-position:var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray);
+	}   
+	
+	.navbar{
+		width: 85%;
+		margin: auto;
+		padding: 35px 0;
+		display: flex;
+		align-items: center;
+	
+	}
+	
+	
+	.header .header-0{
+		background:#fff;
+		padding:1.5rem 9%;
+		display: flex;
+		align-items:end;
+	   justify-content:space-between;
+	
+	}
+	.header .header-0 .logo{
+		align-items:start;
+		justify-content:space-between;
+		font-size: 2.5rem;
+		font-weight: bolder;
+		color:var(--black);
+	}
+	
+	.header .header-0 .logo a{
+		align-items:start;
+		justify-content:left;
+		color:var(--green);
+	}
+	
+	.header .header-1{
+		background:#ffffff;
+		padding:1.5rem 9%;
+		display: flex;
+		align-items:end;
+	
+	}
+	
+	
+	.header .header-1 .search-form input{
+		font-size: 1.6rem;
+		padding:0 2.2rem;
+		height:50%;
+		width:100%;
+		text-transform: none;
+		color:var(--black);
+	}
+	
+	
+	
+	nav{
+		position:sticky;
+		z-index: 99;
+		width: 100%;
+	   background: #1d9738;
+	  }
+	  nav .wrapper{
+		position: sticky;
+		max-width: 1300px;
+		padding: 0px 30px;
+		height: 70px;
+		line-height: 70px;
+		margin: auto;
+		display: flex;
+		align-items: self-start;
+		justify-content: space-between;
+	  }
+	  
+	  .wrapper .nav-links{
+		display: inline-flex;
+	  }
+	  .nav-links li{
+		list-style: none;
+	  }
+	  .nav-links li a{
+		color: #f2f2f2;
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: 500;
+		padding: 9px 15px;
+		border-radius: 5px;
+		transition: all 0.3s ease;
+	  }
+	  nav input{
+		display: none;
+	  }
+	
+	.logo h3{
+		font-size: 30px;
+		font-weight: bold;
+	   
+	}
+	@media screen and (max-width:420px){
+		.logo h3{
+			font-size: 20px;
+			
+		}
+	
+		
+	
+	.aboutus{
+		background:#f3f3f3;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap:1.5rem;
+	}
+	
+	.aboutus .content{
+		flex:1 1 42rem;
+	}
+	
+	.aboutus .image{
+		flex:1 1 42rem;
+	}
+	
+	.aboutus .image img{
+		width: 100%;
+	}
+	
+	.aboutus .content h3{
+		color:var(--green);
+		font-size: 2.5rem;
+		padding-bottom: .5rem;
+	}
+	
+	.aboutus .content h1{
+		color:var(--black);
+		font-size: 4rem;
+	}
+	
+	.aboutus .content p{
+		padding:1rem 0;
+		color:var(--light-color);
+		font-size: 1.4rem;
+		line-height: 2;
+	}
+	
+	</style>
 	<title>Tunnel Lift bulk bags - RDA Bulk Packaging Ltd.</title>
 	<link rel="canonical" href="" />
 	<meta property="og:locale" content="en_US" />
@@ -464,29 +488,29 @@ gtag("config", "G-SYB2RCMRQG");
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.16.0 - 20-09-2023 */
 .elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default"> </h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-8bdb0e6 elementor-widget elementor-widget-heading" data-id="8bdb0e6" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<div class="row">
+				
+ <div class="banner">
+	<div class="navbar">
+
+		<div class="row">
         
-						<div class="Hcard">
-						<div class="content">
-						<h1>TunnelLiftbulkbags </h1>
-								
-							  
-						
-						</div>
-						</div>
-					 </div>
-				<div class="elementor-element elementor-element-9a32f33 elementor-widget elementor-widget-text-editor" data-id="9a32f33" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.16.0 - 20-09-2023 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>tunnel lift bulk bags or tunnel lift FIBCs (Flexible Intermediate Bulk Containers), </p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-75932db elementor-widget elementor-widget-image" data-id="75932db" data-element_type="widget" data-widget_type="image.default">
-					<div class="elementor-widget-container">
-						<img decoding="async" width="1500" height="120" src="image/std bags.jpg" class="attachment-large size-large wp-image-2777" alt="RDA_Packaging" srcset="image/std bags.jpg 1024w, image/std bags.jpg 300w, image/std bags.jpg 768w, image/std bags.jpg 20w, image/std bags.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" ></div>
-					</div>
+			<div class="Hcard">
+		<h1>Tunnel Lift bulk Bags</h1>
+	
+	<br>
+
+		<h2>Your packaging partner committed to supplying 
+              
+		you with the best</h2>
+		
+
+</div>
+</div>
+</div>
+				
+				
+</div>
+</div>
 				
 				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7de3169 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="7de3169" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">

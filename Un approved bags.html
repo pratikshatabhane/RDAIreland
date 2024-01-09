@@ -15,161 +15,200 @@
 	 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
 	<!-- This site is optimized with the Yoast SEO plugin v21.3 - https://yoast.com/wordpress/plugins/seo/ -->
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
-
-:root{
-    --green:#278c51;
-    --dark-color:rgb(33, 145, 80)35
-    --black:#444;
-    --light-color:#666;
-    --border:.1rem solid rgba(0,0,0,.1);
-    --border-hover:.1rem solid var(--black);
-    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-}
-
-*{
-    font-family: 'Poppins', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition:all .2s linear;
-    transition:width none;
-}
-
-
-.header .header-0{
-    background:#fff;
-    padding:1.5rem 9%;
-    display: flex;
-    align-items:end;
-   justify-content:space-between;
-
-}
-.header .header-0 .logo{
-    align-items:start;
-    justify-content:space-between;
-    font-size: 2.5rem;
-    font-weight: bolder;
-    color:var(--black);
-}
-
-.header .header-0 .logo a{
-    align-items:start;
-    justify-content:left;
-    color:var(--green);
-}
-
-.header .header-1{
-    background:#ffffff;
-    padding:1.5rem 9%;
-    display: flex;
-    align-items:end;
-
-}
-
-
-.header .header-1 .search-form input{
-    font-size: 1.6rem;
-    padding:0 2.2rem;
-    height:50%;
-    width:100%;
-    text-transform: none;
-    color:var(--black);
-}
-
-
-
-nav{
-    position:sticky;
-    z-index: 99;
-    width: 100%;
-   background: #1d9738;
-  }
-  nav .wrapper{
-    position: sticky;
-    max-width: 1300px;
-    padding: 0px 30px;
-    height: 70px;
-    line-height: 70px;
-    margin: auto;
-    display: flex;
-    align-items: self-start;
-    justify-content: space-between;
-  }
-  
-  .wrapper .nav-links{
-    display: inline-flex;
-  }
-  .nav-links li{
-    list-style: none;
-  }
-  .nav-links li a{
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 9px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-  }
-  nav input{
-    display: none;
-  }
-
-.logo h3{
-    font-size: 30px;
-    font-weight: bold;
-   
-}
-@media screen and (max-width:420px){
-    .logo h3{
-        font-size: 20px;
-        
-    }
-
-.aboutus{
-    background:#f3f3f3;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap:1.5rem;
-}
-
-.aboutus .content{
-    flex:1 1 42rem;
-}
-
-.aboutus .image{
-    flex:1 1 42rem;
-}
-
-.aboutus .image img{
-    width: 100%;
-}
-
-.aboutus .content h3{
-    color:var(--green);
-    font-size: 2.5rem;
-    padding-bottom: .5rem;
-}
-
-.aboutus .content h1{
-    color:var(--black);
-    font-size: 4rem;
-}
-
-.aboutus .content p{
-    padding:1rem 0;
-    color:var(--light-color);
-    font-size: 1.4rem;
-    line-height: 2;
-}
-
-
-</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+	
+	:root{
+		--green:#278c51;
+		--dark-color:rgb(33, 145, 80)35
+		--black:#444;
+		--light-color:#666;
+		--border:.1rem solid rgba(0,0,0,.1);
+		--border-hover:.1rem solid var(--black);
+		--box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+	}
+	
+	*{
+		font-family: 'Poppins', sans-serif;
+		margin:0; padding:0;
+		box-sizing: border-box;
+		outline: none; border:none;
+		text-decoration: none;
+		text-transform: capitalize;
+		transition:all .2s linear;
+		transition: none;
+	}
+	
+	
+	
+	.Hcard {
+			background-color: #e7e0e0e2;
+			border-radius: 110px;
+			box-shadow: 0px 15px 35px rgba(30, 31, 30, 0.814);
+			justify-content: space-around; /* Adjust the spacing between cards */
+			margin: 5px;
+			max-width: 450px;
+			padding: 50px;
+			text-align:start;
+		   
+		}
+		
+	.Hcard h1{
+			font-size: 52px;
+			font-weight: bold;
+			color: #000;
+		}
+	
+	
+	.banner{
+		width: 100%;
+		height: 100vh;
+		background: url("image/back.jpg");
+		background-size: cover;
+		background-position:var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray);
+	}   
+	
+	.navbar{
+		width: 85%;
+		margin: auto;
+		padding: 35px 0;
+		display: flex;
+		align-items: center;
+	
+	}
+	
+	
+	.header .header-0{
+		background:#fff;
+		padding:1.5rem 9%;
+		display: flex;
+		align-items:end;
+	   justify-content:space-between;
+	
+	}
+	.header .header-0 .logo{
+		align-items:start;
+		justify-content:space-between;
+		font-size: 2.5rem;
+		font-weight: bolder;
+		color:var(--black);
+	}
+	
+	.header .header-0 .logo a{
+		align-items:start;
+		justify-content:left;
+		color:var(--green);
+	}
+	
+	.header .header-1{
+		background:#ffffff;
+		padding:1.5rem 9%;
+		display: flex;
+		align-items:end;
+	
+	}
+	
+	
+	.header .header-1 .search-form input{
+		font-size: 1.6rem;
+		padding:0 2.2rem;
+		height:50%;
+		width:100%;
+		text-transform: none;
+		color:var(--black);
+	}
+	
+	
+	
+	nav{
+		position:sticky;
+		z-index: 99;
+		width: 100%;
+	   background: #1d9738;
+	  }
+	  nav .wrapper{
+		position: sticky;
+		max-width: 1300px;
+		padding: 0px 30px;
+		height: 70px;
+		line-height: 70px;
+		margin: auto;
+		display: flex;
+		align-items: self-start;
+		justify-content: space-between;
+	  }
+	  
+	  .wrapper .nav-links{
+		display: inline-flex;
+	  }
+	  .nav-links li{
+		list-style: none;
+	  }
+	  .nav-links li a{
+		color: #f2f2f2;
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: 500;
+		padding: 9px 15px;
+		border-radius: 5px;
+		transition: all 0.3s ease;
+	  }
+	  nav input{
+		display: none;
+	  }
+	
+	.logo h3{
+		font-size: 30px;
+		font-weight: bold;
+	   
+	}
+	@media screen and (max-width:420px){
+		.logo h3{
+			font-size: 20px;
+			
+		}
+	
+		
+	
+	.aboutus{
+		background:#f3f3f3;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap:1.5rem;
+	}
+	
+	.aboutus .content{
+		flex:1 1 42rem;
+	}
+	
+	.aboutus .image{
+		flex:1 1 42rem;
+	}
+	
+	.aboutus .image img{
+		width: 100%;
+	}
+	
+	.aboutus .content h3{
+		color:var(--green);
+		font-size: 2.5rem;
+		padding-bottom: .5rem;
+	}
+	
+	.aboutus .content h1{
+		color:var(--black);
+		font-size: 4rem;
+	}
+	
+	.aboutus .content p{
+		padding:1rem 0;
+		color:var(--light-color);
+		font-size: 1.4rem;
+		line-height: 2;
+	}
+	
+	</style>
 	<title>UN-Approved Bags</title>
 	
 	<link rel="canonical" href="" />
@@ -453,24 +492,29 @@ gtag("config", "G-SYB2RCMRQG");
 			<style>/*! elementor - v3.16.0 - 20-09-2023 */
 .elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default"></h2>		</div>
 				</div>
-				<div class="elementor-element elementor-element-8bdb0e6 elementor-widget elementor-widget-heading" data-id="8bdb0e6" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">
-				UN-Approved Bags</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-9a32f33 elementor-widget elementor-widget-text-editor" data-id="9a32f33" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-			<style>
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style><p>Ensuring Safe Transport of Hazardous Materials</p>					
-			
-
-
-				<div class="elementor-element elementor-element-75932db elementor-widget elementor-widget-image" data-id="75932db" data-element_type="widget" data-widget_type="image.default">
-					<div class="elementor-widget-container">
-						<img decoding="async" width="1500" height="120" src="image/small bags.jpg" class="attachment-large size-large wp-image-2777" alt="RDA_Packaging" srcset="mage/small bags.jpg 1024w, mage/small bags.jpg 300w, mage/small bags.jpg 768w, mage/small bags.jpg 20w, mage/small bags.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" ></div>
-					</div>
+				<div class="banner">
+					<div class="navbar">
 				
-			
+						<div class="row">
+						
+							<div class="Hcard">
+						<h1>UN Approved Bags</h1>
+					
+				
+					<br>
+						<h2>Your packaging partner committed to supplying 
+							  
+						you with the best</h2>
+						
+				
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					
+					</div>
+				</section>
 				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7de3169 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="7de3169" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7cd00f0" data-id="7cd00f0" data-element_type="column">
@@ -486,11 +530,12 @@ gtag("config", "G-SYB2RCMRQG");
 				
 				<div class="elementor-element elementor-element-39f4b16 elementor-widget elementor-widget-heading" data-id="39f4b16" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default"> RDA Bulk Packaging</h2>		</div>
+					<h1 class="has-cyan-bluish-gray-background-color"> RDA Bulk Packaging</h1>		</div>
 				</div>
 				<div class="elementor-element elementor-element-fb58375 elementor-widget elementor-widget-text-editor" data-id="fb58375" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p>RDA Bulk Packaging takes pride in offering a comprehensive range of UN Approved Bags and specialized packaging solutions meticulously designed to meet the stringent requirements for transporting hazardous materials. Our UN Approved Bags are rigorously tested, certified, and compliant with the United Nations (UN) standards, providing a secure and reliable option for handling dangerous goods throughout their journey.</p>						</div>
+							<h3>RDA Bulk Packaging takes pride in offering a comprehensive range of UN Approved Bags and specialized packaging solutions meticulously designed to meet the stringent requirements for transporting hazardous materials. Our UN Approved Bags are rigorously tested, certified, and compliant with the United Nations (UN) standards, providing a secure and reliable option for handling dangerous goods throughout their journey.</h3>						</div>
+							<br>
 							<div class="elementor-button-wrapper">
 								<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-wobble-vertical" href="RDA New tem website/index.html">
 											<span class="elementor-button-content-wrapper">
@@ -537,26 +582,20 @@ gtag("config", "G-SYB2RCMRQG");
 			
 				<div class="elementor-element elementor-element-56aae0d elementor-widget elementor-widget-heading" data-id="56aae0d" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Some -Key Features</h2>		</div>
+					<h1 class="has-cyan-bluish-gray-background-color">Some -Key Features</h1s>		</div>
 				</div>
 				<div class="elementor-element elementor-element-320cf76 elementor-widget elementor-widget-text-editor" data-id="320cf76" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<ul><li><strong>UN Certification: </strong>Our UN Approved Bags undergo rigorous testing to obtain the necessary certifications. These bags adhere to the criteria specified in the UN Recommendations on the Transport of Dangerous Goods, ensuring they are suitable for safely transporting hazardous substances.</li><li><strong>Durable Construction:</strong>Each UN Approved Bag is built with robust materials and reinforced stitching to withstand the demands of transporting hazardous materials. The design ensures the integrity of the bags during handling, storage, and transportation, minimizing the risk of leaks or spills.</li></ul>						</div>
+							<ul><li><strong>UN Certification: </strong>Our UN Approved Bags undergo rigorous testing to obtain the necessary certifications. These bags adhere to the criteria specified in the UN Recommendations on the Transport of Dangerous Goods, ensuring they are suitable for safely transporting hazardous substances.</li><li><strong>Durable Construction:</strong>Each UN Approved Bag is built with robust materials and reinforced stitching to withstand the demands of transporting hazardous materials. The design ensures the integrity of the bags during handling, storage, and transportation, minimizing the risk of leaks or spills.</li><li><strong>UN Certification: </strong>Our UN Approved Bags undergo rigorous testing to obtain the necessary certifications. These bags adhere to the criteria specified in the UN Recommendations on the Transport of Dangerous Goods, ensuring they are suitable for safely transporting hazardous substances.</li><li><strong>Durable Construction: </strong>Each UN Approved Bag is built with robust materials and reinforced stitching to withstand the demands of transporting hazardous materials. The design ensures the integrity of the bags during handling, storage, and transportation, minimizing the risk of leaks or spills.</li><li><strong>Various Categories:</strong>We offer an extensive selection of UN Approved Bags, categorized by compatibility with different hazard classes of dangerous goods. These categories include:
+								<br>o 13H1 Bags: Designed for dry solid hazardous materials, these bags are suitable for various hazardous substances and provide secure containment during transit.
+								<br>o 13H2 Bags: These bags are engineered to safely transport Solid hazardous materials which contain some moisture, ensuring leak-proof packaging and compliance with regulations.
+								<br>o 13H3 Bags: Ideal for corrosive substances, these bags offer robust protection against spills and prevent any harmful interaction with other materials.
+								<br>o 13H4 Bags: Specifically designed for Solid hazardous materials which contain high moisture, these bags feature enhanced safety measures to mitigate the risk of ignition during transportation.</li><li><strong>Secure Closure: </strong>All our UN Approved Bags are equipped with reliable closures, such as heat-sealing or tie closures, to prevent unauthorized access and ensure that hazardous materials remain securely contained during transit.</li><li><strong>Identification Markings:</strong>UN Approved Bags feature clear and standardized markings, including UN numbers, hazard labels, and handling instructions. These markings enhance visibility and facilitate proper handling and storage of hazardous materials.</li></ul>						</div>
 				</div>
 					</div>
 		</div>
 							</div>
 						</div>
-						<div class="elementor-element elementor-element-320cf76 elementor-widget elementor-widget-text-editor" data-id="320cf76" data-element_type="widget" data-widget_type="text-editor.default">
-						<div class="elementor-widget-container">
-									<ul><li><strong>UN Certification: </strong>Our UN Approved Bags undergo rigorous testing to obtain the necessary certifications. These bags adhere to the criteria specified in the UN Recommendations on the Transport of Dangerous Goods, ensuring they are suitable for safely transporting hazardous substances.</li><li><strong>Durable Construction: </strong>Each UN Approved Bag is built with robust materials and reinforced stitching to withstand the demands of transporting hazardous materials. The design ensures the integrity of the bags during handling, storage, and transportation, minimizing the risk of leaks or spills.</li><li><strong>Various Categories:</strong>We offer an extensive selection of UN Approved Bags, categorized by compatibility with different hazard classes of dangerous goods. These categories include:
-										<br>o 13H1 Bags: Designed for dry solid hazardous materials, these bags are suitable for various hazardous substances and provide secure containment during transit.
-										<br>o 13H2 Bags: These bags are engineered to safely transport Solid hazardous materials which contain some moisture, ensuring leak-proof packaging and compliance with regulations.
-										<br>o 13H3 Bags: Ideal for corrosive substances, these bags offer robust protection against spills and prevent any harmful interaction with other materials.
-										<br>o 13H4 Bags: Specifically designed for Solid hazardous materials which contain high moisture, these bags feature enhanced safety measures to mitigate the risk of ignition during transportation.</li><li><strong>Secure Closure: </strong>All our UN Approved Bags are equipped with reliable closures, such as heat-sealing or tie closures, to prevent unauthorized access and ensure that hazardous materials remain securely contained during transit.</li><li><strong>Identification Markings:</strong>UN Approved Bags feature clear and standardized markings, including UN numbers, hazard labels, and handling instructions. These markings enhance visibility and facilitate proper handling and storage of hazardous materials.</li></ul>						</div>
-						</div>
-							</div>
-				</div>
 						
 		</section>
 				
@@ -579,11 +618,11 @@ gtag("config", "G-SYB2RCMRQG");
 				</div>
 				<div class="elementor-element elementor-element-478ec99 elementor-widget elementor-widget-heading" data-id="478ec99" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">
-			Some Advantages</h2>		</div>
-				</div>
+					<h1 class="has-cyan-bluish-gray-background-color">
+						Some Advantages</h1>		</div>
+				
 				<div class="elementor-element elementor-element-8df8985 elementor-widget elementor-widget-text-editor" data-id="8df8985" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
+				<div class="has-cyan-bluish-gray-background-color">
 							<ul><li><strong>Compliance and Safety:</strong>With UN Approved Bags, you can rest assured that your hazardous materials packaging complies with the UN standards and regulations, ensuring legal compliance and safeguarding against accidents during transportation.</li><li><strong>Risk Mitigation: </strong>The durable construction and secure closures of our UN Approved Bags significantly reduce the risk of leaks, spills, and contamination during transit, minimizing potential harm to people and the environment.</li><li><strong>Global Acceptance: </strong>UN Approved Bags are recognized and accepted worldwide for safely transporting hazardous materials. Their standardized design and markings facilitate international logistics and regulatory compliance.</li><li><strong>Customization Options:</strong>While complying with UN regulations, our UN Approved Bags can be customized to suit specific hazardous materials, ensuring optimal packaging and safe transportation for your unique products.</li><li><strong>Expert Support:  </strong>At RDA Bulk Packaging, our team of experts can assist you in selecting the appropriate UN Approved Bag category (13H1, 13H2, 13H3 & 13H4) for your specific hazardous materials, guiding you through the complexities of regulatory compliance.
 
 								With RDA Bulk Packaging’s UN Approved Bags, your hazardous materials are packaged and transported with the utmost safety and compliance in mind. Contact us today to discuss your hazardous material packaging needs and explore how our UN Approved Bags can enhance the security and efficiency of your supply chain.<br /><br /></li></ul>						</div>
@@ -621,11 +660,11 @@ gtag("config", "G-SYB2RCMRQG");
 				</div>
 				<div class="elementor-element elementor-element-5f5c61a elementor-widget elementor-widget-heading" data-id="5f5c61a" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Applications</h2>		</div>
+			<h1 class="has-cyan-bluish-gray-background-color">Applications</h1>		</div>
 				</div>
 				<div class="elementor-element elementor-element-99090c4 elementor-widget elementor-widget-heading" data-id="99090c4" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Our UN Approved Bags are essential for the safe transportation of a wide range of hazardous materials, including, but not limited to:<h2>		</div>
+			<h3 class="elementor-heading-title elementor-size-default">Our UN Approved Bags are essential for the safe transportation of a wide range of hazardous materials, including, but not limited to:<h3>		</div>
 				</div>
 				<div class="elementor-element elementor-element-28621d3 elementor-widget elementor-widget-text-editor" data-id="28621d3" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
