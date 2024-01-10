@@ -6,7 +6,294 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link rel="profile" href="https://gmpg.org/xfn/11"> 
 	 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	 <style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+	
+	:root{
+		--green:#278c51;
+		--dark-color:rgb(33, 145, 80)35
+		--black:#444;
+		--light-color:#666;
+		--border:.1rem solid rgba(0,0,0,.1);
+		--border-hover:.1rem solid var(--black);
+		--box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+	}
+	
+	*{
+		font-family: 'Poppins', sans-serif;
+		margin:0; padding:0;
+		box-sizing: border-box;
+		outline: none; border:none;
+		text-decoration: none;
+		text-transform: capitalize;
+		transition:all .2s linear;
+		transition: none;
+	}
+	
+	.Hcard {
+		background-color: #e7e0e0e2;
+		border-radius: 110px;
+		box-shadow: 0px 15px 35px rgba(30, 31, 30, 0.814);
+		justify-content: space-around; /* Adjust the spacing between cards */
+		margin: 2px;
+		max-width: 400px;
+		padding: 50px;
+		text-align:start;
+	   
+	}
+	
+    .Hcard h1{
+		font-size: 52px;
+		font-weight: bold;
+		color: #000;
+	}
 
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: url("image/back.jpg");
+    background-size: cover;
+    background-position:var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray);
+}   
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.header .header-0{
+    background:#fff;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items:end;
+   justify-content:space-between;
+
+}
+.header .header-0 .logo{
+    align-items:start;
+    justify-content:space-between;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--black);
+}
+
+.header .header-0 .logo a{
+    align-items:start;
+    justify-content:left;
+    color:var(--green);
+}
+
+.header .header-1{
+    background:#ffffff;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items:end;
+
+}
+
+
+.header .header-1 .search-form input{
+    font-size: 1.6rem;
+    padding:0 2.2rem;
+    height:50%;
+    width:100%;
+    text-transform: none;
+    color:var(--black);
+}
+
+
+
+nav{
+    position:sticky;
+    z-index: 99;
+    width: 100%;
+   background: #1d9738;
+  }
+  nav .wrapper{
+    position: sticky;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+  }
+  
+  .wrapper .nav-links{
+    display: inline-flex;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  nav input{
+    display: none;
+  }
+     
+footer{
+     background-color: #fff;
+     position: relative;
+     width: 100%;
+     min-height: 450px;
+     padding: 3rem 1rem;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+	
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    min-width: 350px;
+    color:#0a6e1bf2;
+    font-family: poppins;
+    padding:0 3rem;
+}
+.col .logo{
+	
+    width: 150px;
+    margin-bottom:25px;
+}
+.col h3{
+	font-size: 35Px;
+    color: rgb(23, 139, 52);
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.col h3::after{
+    content: '';
+    height:5px;
+    width:0px;
+    background-color:  rgb(23, 139, 52);
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: 0.3s ease;
+
+}
+.col h3:hover::after{
+    width:30px
+}
+.col .social a i{
+    color: rgb(23, 139, 52);
+    margin-top:2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+.col .social a i:hover{
+    transform: scale(1.5);
+    filter:grayscale(25);
+}
+.col .links a{
+	font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color:#1d1b1b;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 0.3s ease;
+}
+.col .links a::before{
+    content:'';
+    height: 36px;
+    width:3px;
+    position: absolute;
+    top:5px;
+    left:-10px;
+    background-color: rgb(23, 139, 52);
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.col .links a:hover::before{
+    opacity: 1;
+}
+.col .links a:hover{
+    transform: translateX(-8px);
+    color: rgb(23, 139, 52);
+}
+.col .contact-details{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.col .contact-details i{
+    margin-right:15px;
+}
+.row .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 0;
+}
+.row .form input{
+    background-color: #1a1c20ff;
+    border:0;
+    outline:none;
+    padding:14px 20px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form button{
+    padding:14px 20px;
+    border:0;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color:  rgb(23, 139, 52);
+}
+
+/********** Responsive Design ********/
+@media(max-width:900px)
+{
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+}
+@media(max-width:768px)
+{
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+	</style>
 	<!-- This site is optimized with the Yoast SEO plugin v20.8 - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>Skip Industry - RDA Bulk Packaging Ireland Ltd</title>
 	<link rel="canonical" href="https://rda-ireland.ie/mining-and-quarrying/" />
@@ -450,121 +737,68 @@ var wcpayAssets = {"url":"https:\/\/rda-ireland.ie\/wp-content\/plugins\/woocomm
 
 <body data-rsssl=1 data-cmplz=1 itemtype='https://schema.org/WebPage' itemscope='itemscope' class="page-template-default page page-id-1595 wp-custom-logo theme-astra woocommerce-no-js ehf-footer ehf-template-astra ehf-stylesheet-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.1.5 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header elementor-default elementor-kit-9 elementor-page elementor-page-1595">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
-<a
-	class="skip-link screen-reader-text"
-	href="#content"
-	role="link"
-	title="Skip to content">
-		Skip to content</a>
-
-<div
-class="hfeed site" id="page">
-			<header
-		class="site-header header-main-layout-1 ast-primary-menu-enabled ast-logo-title-inline ast-hide-custom-menu-mobile ast-builder-menu-toggle-icon ast-mobile-header-inline" id="masthead" itemtype="https://schema.org/WPHeader" itemscope="itemscope" itemid="#masthead"		>
-			<div id="ast-desktop-header" data-toggle-type="dropdown">
-		<div class="ast-main-header-wrap main-header-bar-wrap ">
-		<div class="ast-primary-header-bar ast-primary-header main-header-bar site-header-focus-item" data-section="section-primary-header-builder">
-						<div class="site-primary-header-wrap ast-builder-grid-row-container site-header-focus-item ast-container" data-section="section-primary-header-builder">
-				<div class="ast-builder-grid-row ast-builder-grid-row-has-sides ast-builder-grid-row-no-center">
-											<div class="site-header-primary-section-left site-header-section ast-flex site-header-section-left">
-									<div class="ast-builder-layout-element ast-flex site-header-focus-item" data-section="title_tagline">
-											<div
-				class="site-branding ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope"				>
-					<span class="site-logo-img"><a href="https://rda-ireland.ie/" class="custom-logo-link" rel="home"><img width="250" height="112" src="https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-250x112.png" class="custom-logo" alt="logo" decoding="async" srcset="https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-250x112.png 250w, https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-300x134.png 300w, https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-1024x458.png 1024w, https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-768x344.png 768w, https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-1536x688.png 1536w, https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-2048x917.png 2048w, https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-1320x591.png 1320w, https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-600x269.png 600w" sizes="(max-width: 250px) 100vw, 250px" /></a></span>				</div>
-			<!-- .site-branding -->
-					</div>
-								</div>
-																									<div class="site-header-primary-section-right site-header-section ast-flex ast-grid-right-section">
-										<div class="ast-builder-menu-1 ast-builder-menu ast-flex ast-builder-menu-1-focus-item ast-builder-layout-element site-header-focus-item" data-section="section-hb-menu-1">
-			<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="site-navigation ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="primary-site-navigation-desktop" aria-label="Site Navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation ast-inline-flex"><ul id="ast-hf-menu-1" class="main-header-menu ast-menu-shadow ast-nav-menu ast-flex  submenu-with-border astra-menu-animation-slide-down  ast-menu-hover-style-underline  stack-on-mobile"><li id="menu-item-129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-129"><a href="index.html" class="menu-link">Back to home</a></li>
-				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-821"><a href="contact us.html" class="menu-link">Contact Us</a></li>
-
-
-</ul></div></nav></div></div>		</div>
-									</div>
-												</div>
-					</div>
-								</div>
+		<!-- header section starts  -->
+								
+		<header class="header">
+								
+			<div class="header-0">
+			   
+				<a href="#" class="logo"><img src="images/rda logo.png" alt=""></a>
+				<div class="header-1">
+				<form action="" class="search-form">
+					<input type="search" name="" placeholder="search here..." id="search-box">
+				   </form>
+		  
+			   
 			</div>
-		<div class="ast-desktop-header-content content-align-flex-start ">
-			</div>
-</div> <!-- Main Header Bar Wrap -->
-<div id="ast-mobile-header" class="ast-mobile-header-wrap " data-type="dropdown">
-		<div class="ast-main-header-wrap main-header-bar-wrap" >
-		<div class="ast-primary-header-bar ast-primary-header main-header-bar site-primary-header-wrap site-header-focus-item ast-builder-grid-row-layout-default ast-builder-grid-row-tablet-layout-default ast-builder-grid-row-mobile-layout-default" data-section="section-primary-header-builder">
-									<div class="ast-builder-grid-row ast-builder-grid-row-has-sides ast-builder-grid-row-no-center">
-													<div class="site-header-primary-section-left site-header-section ast-flex site-header-section-left">
-										<div class="ast-builder-layout-element ast-flex site-header-focus-item" data-section="title_tagline">
-											<div
-				class="site-branding ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope"				>
-					<span class="site-logo-img"><a href="https://rda-ireland.ie/" class="custom-logo-link" rel="home"><img width="250" height="112" src="https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-250x112.png" class="custom-logo" alt="logo" decoding="async" srcset="https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-250x112.png 250w, https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-300x134.png 300w, https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-1024x458.png 1024w, https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-768x344.png 768w, https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-1536x688.png 1536w, https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-2048x917.png 2048w, https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-1320x591.png 1320w, https://rda-ireland.ie/wp-content/uploads/2023/03/RDA-Bulk-Packaging-IRELAND-ltd-logo@250x-8-600x269.png 600w" sizes="(max-width: 250px) 100vw, 250px" /></a></span>				</div>
-			<!-- .site-branding -->
-					</div>
-									</div>
-																									<div class="site-header-primary-section-right site-header-section ast-flex ast-grid-right-section">
-										<div class="ast-builder-layout-element ast-flex site-header-focus-item" data-section="section-header-mobile-trigger">
-						<div class="ast-button-wrap">
-				<button type="button" class="menu-toggle main-header-menu-toggle ast-mobile-menu-trigger-minimal"   aria-expanded="false">
-					<span class="screen-reader-text">Main Menu</span>
-					<span class="mobile-menu-toggle-icon">
-						<span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg class='ast-mobile-svg ast-menu-svg' fill='currentColor' version='1.1' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z'></path></svg></span><span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg class='ast-mobile-svg ast-close-svg' fill='currentColor' version='1.1' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z'></path></svg></span>					</span>
-									</button>
-			</div>
-					</div>
-									</div>
-											</div>
-						</div>
-	</div>
-		<div class="ast-mobile-header-content content-align-flex-start ">
-				<div class="ast-builder-menu-mobile ast-builder-menu ast-builder-menu-mobile-focus-item ast-builder-layout-element site-header-focus-item" data-section="section-header-mobile-menu">
-			<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="site-navigation ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="ast-mobile-site-navigation" aria-label="Site Navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation"><ul id="ast-hf-mobile-menu" class="main-header-menu ast-nav-menu ast-flex  submenu-with-border astra-menu-animation-fade  stack-on-mobile"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-129"><a href="index.html" class="menu-link"></a>Back to home</li>
-
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-821"><a href="contact us.html" class="menu-link">Contact Us</a></li>
-
-</ul></div></nav></div></div>		</div>
-			</div>
-</div>
-		</header><!-- #masthead -->
-			<div id="content" class="site-content">
-		<div class="ast-container">
-		
-
-	<div id="primary" class="content-area primary">
-
-		
-					<main id="main" class="site-main">
-				<article
-class="post-1595 page type-page status-publish ast-article-single" id="post-1595" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
-	
-	
-<div class="entry-content clear"
-	itemprop="text">
-
-	<style>/*! elementor - v3.13.3 - 28-05-2023 */
-		.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h1 class="elementor-heading-title elementor-size-default">Skip Industry
-		
-		</h1>		</div>
-		<div data-elementor-type="wp-page" data-elementor-id="1595" class="">
-			<section class="elementor-section elementor-top-section elementor-element elementor-element-223683f5 elementor-section-height-min-height elementor-section-full_width elementor-section-height-default elementor-section-items-middle" data-id="223683f5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
-	<div class="elementor-background-overlay"></div>
-	<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-26dc704c" data-id="26dc704c" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-		<div class="elementor-element elementor-element-66947ac4 elementor-invisible elementor-widget elementor-widget-heading" data-id="66947ac4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<style>
-
-
-
-<div class="elementor-element elementor-element-381e9609 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="381e9609" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<style>/*! elementor - v3.13.3 - 28-05-2023 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<section class="elementor-section elementor-inner-section elementor-element elementor-element-514182a7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="514182a7" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}"><div class="elementor-container elementor-column-gap-default"><div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-6f04936f" data-id="6f04936f" data-element_type="column"><div class="elementor-widget-wrap elementor-element-populated"><div class="elementor-element elementor-element-1a50793d elementor-widget elementor-widget-heading" data-id="1a50793d" data-element_type="widget" data-widget_type="heading.default"><div class="elementor-widget-container"><p class="elementor-heading-title elementor-size-default"></p></div></div></div></div></div></section>						</div>
+		  </div>
+		  
+		   <div class="header-2">
+				
+			<nav>
+				<div class="wrapper">
+				 
+				  <input type="radio" name="slider" id="menu-btn">
+				  <input type="radio" name="slider" id="close-btn">
+				  <ul class="nav-links">
+				  
+					<li><a href="index.html">Home</a></li>
+					<li>
+						<a href="about.html" class="desktop-item">About</a>
+					</li>
+					<li>
+					  <a href="services.html" class="desktop-item">Services</a>
+					 </li>
+					<li>
+					  <a href="Industries.html" class="desktop-item">Industries</a>
+					 
+					 </li>
+					  <li><a href="#" class="desktop-item">All Products</a></li>
+					 
+					  <li><a href="contact us.html">Contact Us</a></li>
+			   
+				 
 				</div>
-					</div>
-		</div>
-							</div>
-		</section>
+			  </nav>
+		  </header>
+		  
+		  <!-- header section ends -->
+
+
+
+
+<div class="content">
+<h1></h1>
+	
+  
+
+</div>
+</div>
+</div>
+
+
+</h1>	
+
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-7b9ce9f5 elementor-section-content-top elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="7b9ce9f5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-no">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-31b083d1" data-id="31b083d1" data-element_type="column">
@@ -782,7 +1016,78 @@ class="post-1595 page type-page status-publish ast-article-single" id="post-1595
 		</section>
 							</div>
 		
-	
+						
+<br>
+<br>
+<br>
+<br>
+
+					
+							<footer>
+								<div class="container">
+									<div class="row">
+										  <div class="col" id="company">
+											  <img src="image/rda logo.png" alt="" class="logo">
+											  <p>
+												Created By 2023 RDA Bulk Packaging Ireland Private Limited | All Rights Reserved!
+
+											  </p>
+											  <div class="social">
+												<a href="#"><i class="fab fa-facebook"></i></a>
+												<a href="#"><i class="fab fa-instagram"></i></a>
+												<a href="#"><i class="fab fa-youtube"></i></a>
+												<a href="#"><i class="fab fa-twitter"></i></a>
+												<a href="#"><i class="fab fa-linkedin"></i></a>
+											  </div>
+										  </div>
+						
+						
+										  <div class="col" id="services">
+											 <h3>Services</h3>
+											 <div class="links">
+												<a href="#">➡Marketing</a>
+												<a href="#">➡Distribution</a>
+												<a href="#">➡Manufacturing</a>
+												<a href="#">➡R And D</a>
+											 </div>
+										  </div>
+						
+										  <div class="col" id="useful-links">
+											 <h3>Links</h3>
+											 <div class="links">
+												<a href="about.html">➡About</a>
+												<a href="services.html">➡Services</a>
+												<a href="#">➡Our Policy</a>
+												<a href="contact us.html">➡Contact us</a>
+											 </div>
+										  </div>
+						
+										  <div class="col" id="contact">
+											  <h3>Contact</h3>
+											  <div class="contact-details">
+												 <i class="fa fa-location"></i>
+												 <p>Info@Rda-Ireland.Ie</p>
+											  </div>
+											  <div class="contact-details">
+												<i class="fa fa-phone"></i>
+												 <p>+353 (0) 300 373 0194</p>
+											  </div>
+										  </div>
+									</div>
+						
+									<div class="row">
+										  <div class="form">
+											<form action="">
+												<input type="text" placeholder="Email here...">
+												<button><i class="fa fa-paper-plane"></i></button>
+											</form>
+										  </div>
+									</div>
+						
+								</div>
+							 </footer>
+
+		
 	
 </div><!-- .entry-content .clear -->
 

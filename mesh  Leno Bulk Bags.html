@@ -15,30 +15,65 @@
 	 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
 	<!-- This site is optimized with the Yoast SEO plugin v21.3 - https://yoast.com/wordpress/plugins/seo/ -->
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+	
+	:root{
+		--green:#278c51;
+		--dark-color:rgb(33, 145, 80)35
+		--black:#444;
+		--light-color:#666;
+		--border:.1rem solid rgba(0,0,0,.1);
+		--border-hover:.1rem solid var(--black);
+		--box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+	}
+	
+	*{
+		font-family: 'Poppins', sans-serif;
+		margin:0; padding:0;
+		box-sizing: border-box;
+		outline: none; border:none;
+		text-decoration: none;
+		text-transform: capitalize;
+		transition:all .2s linear;
+		transition: none;
+	}
+	
+	.Hcard {
+		background-color: #e7e0e0e2;
+		border-radius: 110px;
+		box-shadow: 0px 15px 35px rgba(30, 31, 30, 0.814);
+		justify-content: space-around; /* Adjust the spacing between cards */
+		margin: 2px;
+		max-width: 400px;
+		padding: 50px;
+		text-align:start;
+	   
+	}
+	
+    .Hcard h1{
+		font-size: 52px;
+		font-weight: bold;
+		color: #000;
+	}
 
-:root{
-    --green:#278c51;
-    --dark-color:rgb(33, 145, 80)35
-    --black:#444;
-    --light-color:#666;
-    --border:.1rem solid rgba(0,0,0,.1);
-    --border-hover:.1rem solid var(--black);
-    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: url("image/back.jpg");
+    background-size: cover;
+    background-position:var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray);
+}   
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+
 }
-
-*{
-    font-family: 'Poppins', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition:all .2s linear;
-    transition:width none;
-}
-
 
 
 .header .header-0{
@@ -119,57 +154,155 @@ nav{
   nav input{
     display: none;
   }
-
-.logo h3{
-    font-size: 30px;
-    font-weight: bold;
-   
+     
+footer{
+     background-color: #fff;
+     position: relative;
+     width: 100%;
+     min-height: 450px;
+     padding: 3rem 1rem;
 }
-@media screen and (max-width:420px){
-    .logo h3{
-        font-size: 20px;
-        
-    }
-.aboutus{
-    background:#f3f3f3;
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap:1.5rem;
+    flex-direction: column;
+
+	
 }
 
-.aboutus .content{
-    flex:1 1 42rem;
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.aboutus .image{
-    flex:1 1 42rem;
+.col{
+    min-width: 350px;
+    color:#0a6e1bf2;
+    font-family: poppins;
+    padding:0 3rem;
+}
+.col .logo{
+	
+    width: 150px;
+    margin-bottom:25px;
+}
+.col h3{
+	font-size: 35Px;
+    color: rgb(23, 139, 52);
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.col h3::after{
+    content: '';
+    height:5px;
+    width:0px;
+    background-color:  rgb(23, 139, 52);
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: 0.3s ease;
+
+}
+.col h3:hover::after{
+    width:30px
+}
+.col .social a i{
+    color: rgb(23, 139, 52);
+    margin-top:2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+.col .social a i:hover{
+    transform: scale(1.5);
+    filter:grayscale(25);
+}
+.col .links a{
+	font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color:#1d1b1b;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 0.3s ease;
+}
+.col .links a::before{
+    content:'';
+    height: 36px;
+    width:3px;
+    position: absolute;
+    top:5px;
+    left:-10px;
+    background-color: rgb(23, 139, 52);
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.col .links a:hover::before{
+    opacity: 1;
+}
+.col .links a:hover{
+    transform: translateX(-8px);
+    color: rgb(23, 139, 52);
+}
+.col .contact-details{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.col .contact-details i{
+    margin-right:15px;
+}
+.row .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 0;
+}
+.row .form input{
+    background-color: #1a1c20ff;
+    border:0;
+    outline:none;
+    padding:14px 20px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form button{
+    padding:14px 20px;
+    border:0;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color:  rgb(23, 139, 52);
 }
 
-.aboutus .image img{
+/********** Responsive Design ********/
+@media(max-width:900px)
+{
+  .row{
+    flex-direction: column;
+  }
+  .col{
     width: 100%;
+    text-align: left;
+    margin-bottom: 25px;
+  }
 }
-
-.aboutus .content h3{
-    color:var(--green);
-    font-size: 2.5rem;
-    padding-bottom: .5rem;
+@media(max-width:768px)
+{
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
 }
-
-.aboutus .content h1{
-    color:var(--black);
-    font-size: 4rem;
-}
-
-.aboutus .content p{
-    padding:1rem 0;
-    color:var(--light-color);
-    font-size: 1.4rem;
-    line-height: 2;
-}
-
-
-</style>
+	</style>
 	<title> Leno Mesh Bulk Bags - RDA Bulk Packaging Ltd.</title>
 	<link rel="canonical" href="" />
 	<meta property="og:locale" content="en_US" />
@@ -452,20 +585,29 @@ gtag("config", "G-SYB2RCMRQG");
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.16.0 - 20-09-2023 */
 .elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default"></h2>		</div>
+				<div class="banner">
+					<div class="navbar">
+				
+						<div class="row">
+						
+							<div class="Hcard">
+						<h1>Leno Mesh Bulk Bags</h1>
+					
+				
+					<br>
+						<h2>Your packaging partner committed to supplying 
+							  
+						you with the best</h2>
+						
+				
 				</div>
-				<div class="elementor-element elementor-element-8bdb0e6 elementor-widget elementor-widget-heading" data-id="8bdb0e6" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default"> Leno Mesh Bulk Bags</h2>		</div>
 				</div>
-				<div class="elementor-element elementor-element-9a32f33 elementor-widget elementor-widget-text-editor" data-id="9a32f33" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.16.0 - 20-09-2023 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>Safe Handling of Hazardous Materials</p>						</div>
 				</div>
-				<div class="elementor-element elementor-element-75932db elementor-widget elementor-widget-image" data-id="75932db" data-element_type="widget" data-widget_type="image.default">
-					<div class="elementor-widget-container">
-						<img decoding="async" width="1500" height="120" src="image/Picture10.jpg" class="attachment-large size-large wp-image-2777" alt="RDA_Packaging" srcset="image/Picture10.jpg 1024w, image/Picture10.jpg 300w, image/Picture10.jpg 768w,image/Picture10.jpg 20w,image/Picture10.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" ></div>
+				</div>
+				</div>
+					
 					</div>
+				</section>
 				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7de3169 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="7de3169" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7cd00f0" data-id="7cd00f0" data-element_type="column">
@@ -481,11 +623,12 @@ gtag("config", "G-SYB2RCMRQG");
 				
 				<div class="elementor-element elementor-element-39f4b16 elementor-widget elementor-widget-heading" data-id="39f4b16" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default"> RDA Bulk Packaging</h2>		</div>
+			<h1 class="has-cyan-bluish-gray-background-color"> RDA Bulk Packaging</h1>		</div>
 				</div>
 				<div class="elementor-element elementor-element-fb58375 elementor-widget elementor-widget-text-editor" data-id="fb58375" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p>RDA Bulk Packaging is committed to safety and compliance, and we proudly offer Asbestos Bulk Bags and Sacks specifically designed for the safe handling and disposal of hazardous asbestos materials. Asbestos poses serious health risks, and our specially designed bags and sacks ensure that asbestos-containing materials can be transported and disposed of with the utmost safety and in accordance with regulatory requirements.</p>						</div>
+							<h3>RDA Bulk Packaging is committed to safety and compliance, and we proudly offer Asbestos Bulk Bags and Sacks specifically designed for the safe handling and disposal of hazardous asbestos materials. Asbestos poses serious health risks, and our specially designed bags and sacks ensure that asbestos-containing materials can be transported and disposed of with the utmost safety and in accordance with regulatory requirements.</h3>						</div>
+							<br>
 							<div class="elementor-button-wrapper">
 								<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-wobble-vertical" href="RDA New tem website/index.html">
 											<span class="elementor-button-content-wrapper">
@@ -529,28 +672,17 @@ gtag("config", "G-SYB2RCMRQG");
 			
 				<div class="elementor-element elementor-element-56aae0d elementor-widget elementor-widget-heading" data-id="56aae0d" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Key Features</h2>		</div>
+			<h1 class="has-cyan-bluish-gray-background-color">Key Features</h1>		</div>
 				</div>
 				<div class="elementor-element elementor-element-320cf76 elementor-widget elementor-widget-text-editor" data-id="320cf76" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<ul><li><strong>Asbestos-Specific Design:</strong> Our Asbestos Bulk Bags and Sacks are purpose-built to handle asbestos-containing materials. They are fabricated from high-quality, durable materials with reinforced stitching, providing the necessary strength and containment to safely transport hazardous asbestos.</li><li><strong>Barrier Properties:</strong> The bags and sacks have excellent barrier properties, preventing the release of asbestos fibres during transportation. This helps safeguard workers and the environment from potential exposure to asbestos.</li></ul>						</div>
+							<ul><li><strong>Asbestos-Specific Design:</strong> Our Asbestos Bulk Bags and Sacks are purpose-built to handle asbestos-containing materials. They are fabricated from high-quality, durable materials with reinforced stitching, providing the necessary strength and containment to safely transport hazardous asbestos.</li><li><strong>Barrier Properties:</strong> The bags and sacks have excellent barrier properties, preventing the release of asbestos fibres during transportation. This helps safeguard workers and the environment from potential exposure to asbestos.<li><strong>Compliance with Regulations:</strong> Our Net Bulk Bags adhere to all relevant regulations and guidelines for the proper handling, transportation, and disposal of asbestos-containing materials. Their design ensures that you stay compliant with the strictest safety standards.</li><li><strong>Customized Solutions:</strong> We offer various sizes and loading options to accommodate different quantities of asbestos materials. Additionally, our bags and sacks can be customized with specific markings and labelling to facilitate proper identification and handling.</li></ul>						</div>
 				</div>
 					</div>
 		</div>
 							</div>
 		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-00c8b5c elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="00c8b5c" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3777484" data-id="3777484" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-8e7eba0 elementor-widget elementor-widget-text-editor" data-id="8e7eba0" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<ul><li><strong>Compliance with Regulations:</strong> Our Net Bulk Bags adhere to all relevant regulations and guidelines for the proper handling, transportation, and disposal of asbestos-containing materials. Their design ensures that you stay compliant with the strictest safety standards.</li><li><strong>Customized Solutions:</strong> We offer various sizes and loading options to accommodate different quantities of asbestos materials. Additionally, our bags and sacks can be customized with specific markings and labelling to facilitate proper identification and handling.</li></ul>						</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
+				
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-31375dd elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="31375dd" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
 							<div class="elementor-background-overlay"></div>
 							<div class="elementor-container elementor-column-gap-default">
@@ -566,14 +698,11 @@ gtag("config", "G-SYB2RCMRQG");
 				</div>
 				<div class="elementor-element elementor-element-45786fb elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="45786fb" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Its</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-478ec99 elementor-widget elementor-widget-heading" data-id="478ec99" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Advantages</h2>		</div>
-				</div>
+			<h1 class="has-cyan-bluish-gray-background-color">Its Advantages</h1>		</div>
+			
+				
 				<div class="elementor-element elementor-element-8df8985 elementor-widget elementor-widget-text-editor" data-id="8df8985" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
+				<div class="has-cyan-bluish-gray-background-color">
 							<ul><li><strong>Worker Safety:</strong> Net Bulk Bags are designed to minimize the risk of asbestos exposure, ensuring the safety of workers and anyone involved in the handling and disposal of hazardous asbestos materials.</li><li><strong>Environmental Protection:</strong> The bags&#8217; barrier properties prevent the release of asbestos fibres, safeguarding the environment from potential contamination and ensuring responsible disposal.</li><li><strong>Regulatory Compliance:</strong> Our Net Bulk Bags are compliant with all relevant regulations and safety standards for handling asbestos-containing materials, giving you peace of mind during transportation and disposal.</li><li><strong>Efficient Disposal:</strong> The bags and sacks streamline the process of asbestos waste disposal, allowing for efficient loading and transport to designated disposal facilities.</li><li><strong>Professional Assistance:</strong> At RDA Bulk Packaging, our experts can guide you in selecting the right Asbestos Bulk Bags and Sacks for your specific application, ensuring proper containment and safety.<br /><br />With RDA Bulk Packaging&#8217;s Net Bulk Bags, you can confidently handle and dispose of asbestos-containing materials while prioritizing safety and regulatory compliance. Contact us today to discuss your asbestos packaging needs and explore how our specialized bags and sacks can enhance safety and efficiency in asbestos transportation and disposal.<br /><br /></li></ul>						</div>
 				</div>
 				<div class="elementor-element elementor-element-cc76da5 elementor-mobile-align-justify elementor-widget-mobile__width-inherit elementor-align-left elementor-widget elementor-widget-button" data-id="cc76da5" data-element_type="widget" data-widget_type="button.default">
@@ -605,15 +734,12 @@ gtag("config", "G-SYB2RCMRQG");
 				</div>
 				<div class="elementor-element elementor-element-b7eced3 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="b7eced3" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Its</h2>		</div>
+			<h1 class="has-cyan-bluish-gray-background-color">Its Applications</h1>		</div>
 				</div>
-				<div class="elementor-element elementor-element-5f5c61a elementor-widget elementor-widget-heading" data-id="5f5c61a" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Applications</h2>		</div>
-				</div>
+				
 				<div class="elementor-element elementor-element-99090c4 elementor-widget elementor-widget-heading" data-id="99090c4" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Net Bulk Bags are essential for safely transporting and disposing of various asbestos-containing materials, including, but not limited to:</h2>		</div>
+			<h3 class="elementor-heading-title elementor-size-default">Net Bulk Bags are essential for safely transporting and disposing of various asbestos-containing materials, including, but not limited to:</h3>		</div>
 				</div>
 				<div class="elementor-element elementor-element-28621d3 elementor-widget elementor-widget-text-editor" data-id="28621d3" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
@@ -631,10 +757,78 @@ gtag("config", "G-SYB2RCMRQG");
 					</div>
 		</section>
 							</div>
-		</section>
-							</div>
+							
+<br>
+<br>
+<br>
+<br>
 
+					
+							<footer>
+								<div class="container">
+									<div class="row">
+										  <div class="col" id="company">
+											  <img src="image/rda logo.png" alt="" class="logo">
+											  <p>
+												Created By 2023 RDA Bulk Packaging Ireland Private Limited | All Rights Reserved!
 
+											  </p>
+											  <div class="social">
+												<a href="#"><i class="fab fa-facebook"></i></a>
+												<a href="#"><i class="fab fa-instagram"></i></a>
+												<a href="#"><i class="fab fa-youtube"></i></a>
+												<a href="#"><i class="fab fa-twitter"></i></a>
+												<a href="#"><i class="fab fa-linkedin"></i></a>
+											  </div>
+										  </div>
+						
+						
+										  <div class="col" id="services">
+											 <h3>Services</h3>
+											 <div class="links">
+												<a href="#">➡Marketing</a>
+												<a href="#">➡Distribution</a>
+												<a href="#">➡Manufacturing</a>
+												<a href="#">➡R And D</a>
+											 </div>
+										  </div>
+						
+										  <div class="col" id="useful-links">
+											 <h3>Links</h3>
+											 <div class="links">
+												<a href="about.html">➡About</a>
+												<a href="services.html">➡Services</a>
+												<a href="#">➡Our Policy</a>
+												<a href="contact us.html">➡Contact us</a>
+											 </div>
+										  </div>
+						
+										  <div class="col" id="contact">
+											  <h3>Contact</h3>
+											  <div class="contact-details">
+												 <i class="fa fa-location"></i>
+												 <p>Info@Rda-Ireland.Ie</p>
+											  </div>
+											  <div class="contact-details">
+												<i class="fa fa-phone"></i>
+												 <p>+353 (0) 300 373 0194</p>
+											  </div>
+										  </div>
+									</div>
+						
+									<div class="row">
+										  <div class="form">
+											<form action="">
+												<input type="text" placeholder="Email here...">
+												<button><i class="fa fa-paper-plane"></i></button>
+											</form>
+										  </div>
+									</div>
+						
+								</div>
+							 </footer>
+
+		
 							
 
 
