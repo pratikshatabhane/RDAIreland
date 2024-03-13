@@ -7,6 +7,8 @@ $password = "";
 $dbname ="loginpage";
 $con = mysqli_connect($server, $username, $password,$dbname);
 
+
+
 if (!$con)
 {
     echo "not connected";
@@ -15,10 +17,6 @@ if (!$con)
 else
 {
     echo "connect";
-
 }
-
-
-
 
 ?>
