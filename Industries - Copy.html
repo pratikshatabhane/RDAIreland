@@ -24,24 +24,207 @@
     <!-- animation links -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- animation links -->
+
     <style>
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'lato', serif;
-}
-.all-content{
-    background: #f6f5f4;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --green:#278c51;
+    --dark-color:rgb(33, 145, 80)35
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    transition:width none;
+}
+
+
+
+.card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    justify-content: space-around; /* Adjust the spacing between cards */
+    margin: 20px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card img {
+    max-width:150%;
+    height: 390px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    margin: 10px;
+}
+
+video {
+    max-width: 30%;
+    margin-right: 20px;
+}
+
+.video-content {
+    flex: 1;
+}
+
+h2 {
+    font-size: 4.5rem;
+    color: #22761a;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.8rem;
+    color: #666;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--black);
+}
+
+section{
+    padding:5rem 9%;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.heading::before{
+    content: '';
+    position: absolute;
+    top:50%; left:0;
+    transform: translateY(-50%);
+    width: 100%;
+    height:.01rem;
+    background: rgba(0,0,0,.1);
+    z-index: -1;
+}
+
+.heading span{
+    font-size: 3rem;
+    padding:.5rem 2rem;
+    color:var(--black);
+    background: #fff;
+    border:var(--border);
+}
+
+.btn{
+    margin-top: 1rem;
+    display:inline-block;
+    padding:.9rem 3rem;
+    border-radius: 1.7rem;
+    color:#fff;
+    background:var(--green);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background:var(--dark-color);
+}
 .header .header-0{
     background:#fff;
     padding:1.5rem 9%;
     display: flex;
-    align-items:end;
+    align-items:start;
    justify-content:space-between;
 
+}
+
+.navbar {
+	overflow: hidden;
+	background: #4CAF50;
+}
+.navbar a {
+	float: left;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	padding: 10px 12px;
+	text-decoration:none;
+	text-transform: uppercase;
+}
+.d {
+	float: left;
+	overflow: hidden;
+}
+.d .d-btn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: #fff;
+	padding: 10px 12px;
+	background: inherit;
+	text-transform: uppercase;
+}
+.navbar a:hover, .d:hover .d-btn {
+	background: #5F5F5F;
 }
 .header .header-0 .logo{
     align-items:start;
@@ -61,37 +244,275 @@
     background:#ffffff;
     padding:1.5rem 9%;
     display: flex;
-    align-items:end;
-
+    align-items:center;
+   justify-content: right;
 }
-
+.header .header-1 .search-form{
+    width:50rem;
+    height:5rem;
+    border:var(--border);
+    overflow: hidden;
+    background:#fff;
+    display:flex;
+    align-items: center;
+    border-radius: .5rem;
+}
 
 .header .header-1 .search-form input{
     font-size: 1.6rem;
-    padding:0 2.2rem;
-    height:50%;
+    padding:0 1.2rem;
+    height:100%;
     width:100%;
     text-transform: none;
     color:var(--black);
 }
 
+.header .header-1 .search-form label{
+    font-size: 2.5rem;
+    padding-right: 1.5rem;
+    color:var(--black);
+    cursor: pointer;
+}
 
+.header .header-1 .search-form label:hover{
+    color:var(--green);
+}
+
+.header .header-1 .icons div,
+.header .header-1 .icons a{
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color:var(--black);
+    cursor: pointer;
+}
+
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover{
+    color:var(--green);
+}
+
+#search-btn{
+    display: none;
+}
+
+.header .header-2{
+    background:var(--green);
+}
+
+.header .header-2 .navbar{
+    text-align:center;
+}
+
+
+.header .header-2 .navbar a{
+    color:#fff;
+    display: inline-block;
+    padding:1.2rem;
+    font-size: 1.7rem;
+}
+
+.header .header-2 .navbar a:hover{
+    background:var(--dark-color);
+}
+
+.header .header-2.active{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+
+}
+
+.bottom-navbar{
+    text-align: center;
+    background:var(--green);
+    position: fixed;
+    bottom:0; left:0; right:0;
+    z-index: 1000;
+    display: none;
+}
+
+.bottom-navbar a{
+    font-size: 2.5rem;
+    padding:2rem;
+    color:#fff;
+}
+
+.bottom-navbar a:hover{
+    background:var(--dark-color);
+}
+
+.login-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(255,255,255,.9);
+    position:fixed;
+    top:0; right:-105%;
+    z-index: 10000;
+    height:100%;
+    width:100%;
+}
+
+.login-form-container.active{
+    right:0;
+}
+
+.login-form-container form{
+    background:#fff;
+    border:var(--border);
+    width:40rem;
+    padding:2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin:2rem;
+}
+
+.login-form-container form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:var(--black);
+    text-align: center;
+}
+
+.login-form-container form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.login-form-container form .box{
+    width: 100%;
+    margin:.7rem 0;
+    font-size: 1.6rem;
+    border:var(--border);
+    border-radius: .5rem;
+    padding:1rem 1.2rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.login-form-container form .checkbox{
+    display:flex;
+    align-items: center;
+    gap:.5rem;
+    padding:1rem 0;
+}
+
+.login-form-container form .checkbox label{
+    font-size: 1.5rem;
+    color:var(--light-color);
+    cursor: pointer;
+}
+
+.login-form-container form .btn{
+    text-align: center;
+    width:100%;
+    margin:1.5rem 0;
+}
+
+.login-form-container form p{
+    padding-top: .8rem;
+    color:var(--light-color);
+    font-size: 1.5rem;
+}
+
+.login-form-container form p a{
+    color:var(--green);
+    text-decoration: underline;
+}
+
+.login-form-container #close-login-btn{
+    position: absolute;
+    top:1.5rem; right:2.5rem;
+    font-size: 5rem;
+    color:var(--black);
+    cursor: pointer;
+}
+
+.home{
+    width: 100%;
+    height: 110vh;
+    background: url(../image/background\ PNG.png)no-repeat;
+    background-size: cover;
+    opacity:222222;
+    
+}
+.home .row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.home .row .content{
+    flex:1 1 42rem;
+}
+
+.home .row .books-slider{
+    flex:1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home .row .books-slider a img{
+    height: 25rem;
+}
+
+.home .row .books-slider a:hover img{
+    transform: scale(.9);
+}
+
+.home .row .books-slider .stand{
+    width:100%;
+    margin-top: -2rem;
+}
+
+.home .row .content h3{
+    color:#fff;
+   
+    font-size: 6.2rem;
+    font-weight:bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:2rem 0;
+}
+
+.home .row .content p{
+    color:#0e0000;
+    background-attachment: var(--box-shadow);
+    font-size: 2.8rem;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:2rem 0;
+}
+
+.Hcard {
+   background-color:#abb3ab70;
+    border-radius: 110px;
+    box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.2);
+    justify-content: space-around; /* Adjust the spacing between cards */
+    margin: 2px;
+    max-width: 350px;
+    padding: 50px;
+    text-align:start;
+    transition: transform 0.2s ease-in-out;
+}
 
 nav{
     position:sticky;
     z-index: 99;
     width: 100%;
-   background: #1d9738;
+    
+    background: #1d9738;
   }
   nav .wrapper{
-    position: sticky;
+    position: relative;
     max-width: 1300px;
     padding: 0px 30px;
     height: 70px;
     line-height: 70px;
     margin: auto;
     display: flex;
-    align-items: self-start;
+    align-items: center;
     justify-content: space-between;
   }
   
@@ -110,288 +531,607 @@ nav{
     border-radius: 5px;
     transition: all 0.3s ease;
   }
+  .nav-links li a:hover{
+    background: #3A3B3C;
+  }
+  .nav-links .mobile-item{
+    display: none;
+  }
+  .nav-links .drop-menu{
+    position: absolute;
+    background: #242526;
+    width: 180px;
+    line-height: 45px;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+  .nav-links li:hover .drop-menu,
+  .nav-links li:hover .mega-box{
+    transition: all 0.3s ease;
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .drop-menu li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+    border-radius: 0px;
+  }
+  .mega-box{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .mega-box .content{
+    background: #242526;
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+  .mega-box .content .row{
+    width: calc(25% - 30px);
+    line-height: 45px;
+  }
+  .content .row img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .content .row header{
+    color: #f2f2f2;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .content .row .mega-links{
+    margin-left: -40px;
+    border-left: 1px solid rgba(255,255,255,0.09);
+  }
+  .row .mega-links li{
+    padding: 0 20px;
+  }
+  .row .mega-links li a{
+    padding: 0px;
+    padding: 0 20px;
+    color: #d9d9d9;
+    font-size: 17px;
+    display: block;
+  }
+  .row .mega-links li a:hover{
+    color: #f2f2f2;
+  }
+  .wrapper .btn{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  .wrapper .btn.close-btn{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+  }
+  @media screen and (max-width: 970px) {
+    .wrapper .btn{
+      display: block;
+    }
+    .wrapper .nav-links{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      max-width: 350px;
+      top: 0;
+      left: -100%;
+      background: #169038;
+      display: block;
+      padding: 50px 10px;
+      line-height: 50px;
+      overflow-y: auto;
+      box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+      transition: all 0.3s ease;
+    }
+   
+    #menu-btn:checked ~ .nav-links{
+      left: 0%;
+    }
+    #menu-btn:checked ~ .btn.menu-btn{
+      display: none;
+    }
+    #close-btn:checked ~ .btn.menu-btn{
+      display: block;
+    }
+    .nav-links li{
+      margin: 15px 10px;
+    }
+    .nav-links li a{
+      padding: 0 20px;
+      display: block;
+      font-size: 20px;
+    }
+    .nav-links .drop-menu{
+      position: static;
+      opacity: 1;
+      top: 65px;
+      visibility: visible;
+      padding-left: 20px;
+      width: 100%;
+      max-height: 0px;
+      overflow: hidden;
+      box-shadow: none;
+      transition: all 0.3s ease;
+    }
+    #showDrop:checked ~ .drop-menu,
+    #showMega:checked ~ .mega-box{
+      max-height: 100%;
+    }
+    .nav-links .desktop-item{
+      display: none;
+    }
+    .nav-links .mobile-item{
+      display: block;
+      color: #f2f2f2;
+      font-size: 20px;
+      font-weight: 500;
+      padding-left: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .nav-links .mobile-item:hover{
+      background: #3A3B3C;
+    }
+    .drop-menu li{
+      margin: 0;
+    }
+    .drop-menu li a{
+      border-radius: 5px;
+      font-size: 18px;
+    }
+    .mega-box{
+      position: static;
+      top: 65px;
+      opacity: 1;
+      visibility: visible;
+      padding: 0 20px;
+      max-height: 0px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .mega-box .content{
+      box-shadow: none;
+      flex-direction: column;
+      padding: 20px 20px 0 20px;
+    }
+    .mega-box .content .row{
+      width: 100%;
+      margin-bottom: 15px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .mega-box .content .row:nth-child(1),
+    .mega-box .content .row:nth-child(2){
+      border-top: 0px;
+    }
+    .content .row .mega-links{
+      border-left: 0px;
+      padding-left: 15px;
+    }
+    .row .mega-links li{
+      margin: 0;
+    }
+    .content .row header{
+      font-size: 19px;
+    }
+  }
   nav input{
     display: none;
   }
+  
 
-.logo h3{
-    font-size: 30px;
-    font-weight: bold;
-   
+.swiper-button-next,
+.swiper-button-prev{
+    border:var(--border-hover);
+    height:4rem;
+    width:4rem;
+    color:var(--black);
+    background: #fff;
 }
-@media screen and (max-width:420px){
-    .logo h3{
-        font-size: 20px;
-        
-    }
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 2rem;
 }
-    
-/* home section */
-.home{
-    width: 100%;
-    height: 88.5vh;
-    display: flex;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(image/cc.png);
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    background: var(--black);
+    color:#fff;
+}
+
+.newsletter{
+    background:url(../image/Green\ landscape.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.newsletter form{
+    max-width: 45rem;
+    margin-left: auto;
+    text-align: center;
+    padding:5rem 0;
+}
+
+.newsletter form h3{
+    font-size: 2.2rem;
+    color:#fff;
+    padding-bottom: .7rem;
+    font-weight: normal;
+}
+
+.newsletter form .box{
+    width: 100%;
+    margin: .7rem 0;
+    padding:1rem 1.2rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    border-radius: .5rem;
+    text-transform: none;
+}
+
+.arrivals .arrivals-slider .box{
+    display: flex;
+    align-items:center;
+    gap:1.5rem;
+    padding:2rem 1rem;
+    border:var(--border);
+    margin:1rem 0;
+}
+
+.arrivals .arrivals-slider .box:hover{
+    border:var(--border-hover);
+}
+
+.arrivals .arrivals-slider .box .image img{
+    height:15rem;
+}
+
+.arrivals .arrivals-slider .box .content h3{
+    font-size: 2rem;
+    color:var(--black);
+}
+
+.arrivals .arrivals-slider .box .content .price{
+    font-size: 2.2rem;
+    color:var(--black);
+    padding-bottom: .5rem;
+}
+
+.arrivals .arrivals-slider .box .content .price span{
+    font-size: 1.5rem;
+    color:var(--light-color);
+    text-decoration: line-through;
+}
+
+.arrivals .arrivals-slider .box .content .stars i{
+    font-size: 1.5rem;
+    color:var(--green);
+}
+
+.deal{
+    background:#f3f3f3;
+    display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    position: relative;
-    z-index: 0;
+    gap:1.5rem;
 }
-.home .img{
-    flex: 1 1 400px;
+
+.deal .content{
+    flex:1 1 42rem;
 }
-.home .img img{
+
+.deal .image{
+    flex:1 1 42rem;
+}
+
+.deal .image img{
     width: 100%;
 }
-.home .content{
-    flex: 1 1 400px;
-    margin-left: 60px;
-}
-.content h3{
-    color: white;
-    font-size: 60px;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px black;
-}
-.content h2{
-    font-size: 60px;
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    font-weight: bold;
-}
-.changecontent::after{
-    content: ' ';
-    color: rgb(17, 92, 12);
-    animation: changetext 10s infinite linear;
-    font-weight: bold;
-}
-@keyframes changetext{
-    0%{content: "Products";}
-    80%{content: "Bulk Bags";}
-    90%{content: "Special Bulk Bags";}
-    100%{content: "Sacks and Small Bags";}
-    
-}
-.content p{
-    color: white;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px black;
-}
-.content .btn{
-    width: 110px;
-    height: 38px;
-    background-color: rgb(17, 92, 12);
-    color: white;
-}
-@media screen and (max-width:800px){
-    .content h3{
-        font-size: 50px;
-    }
-}
-@media screen and (max-width:860px){
-    .home{
-        height: 120vh;
-    }
-}
-@media screen and (max-width:560px){
-    .home{
-        height: 100vh;
-    }
-}
-@media screen and (max-width:330px){
-    .content h2{
-        font-size: 30px;
-    }
-    .content h3{
-        font-size: 30px;
-    }
-}
-/* home section end */
 
-/* gallary */
-#gallary{
-    margin-top: 50px;
+.deal .content h3{
+    color:var(--green);
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
 }
-#gallary h1{
-    text-align: center;
-    font-weight: bold;
-    margin-top: 50px;
-    color: rgb(5, 95, 36);
-    text-shadow: 1px 1px 1px rgb(7, 112, 39);
-    border-bottom: 2px solid rgb(5, 95, 36);
-}
-#gallary .card{
-    box-shadow: 3px 3px 3px rgb(5, 121, 10);
-    cursor: pointer;
-}
-#gallary .overlay{
-    opacity: 0;
-    width: 100%;
-    color: rgb(13, 15, 14);
-    text-shadow: 1px 1px 1px rgb(8, 98, 33);
-}
-#gallary .card:hover .overlay{
-    opacity: 5;
-    margin-top: 20%;
-    transition: 0.5s ease;
-}
-/* gallary */
 
-/* about */
-#about{
-    margin-top: 50px;
+.deal .content h1{
+    color:var(--black);
+    font-size: 4rem;
 }
-#about h1{
+
+.deal .content p{
+    padding:1rem 0;
+    color:var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.reviews .reviews-slider .box{
+    border:var(--border);
+    padding:2rem;
     text-align: center;
-    font-weight: bold;
-    margin-top: 50px;
-    color: rgb(14, 161, 43);
-    text-shadow: 1px 1px 1px black;
-    border-bottom: 2px solid rgb(19, 152, 30);
+    margin:2rem 0;
 }
-#about .card{
-    background-color: rgb(14, 161, 14);
-    box-shadow: 0px 0px 5px black;
+
+.reviews .reviews-slider .box:hover{
+    border:var(--border-hover);
 }
-#about p{
-    color: rgb(33, 23, 3);
-   
-    font-weight:bold;
+
+.reviews .reviews-slider .box img{
+    height:7rem;
+    width:7rem;
+    border-radius: 50%;
+    object-fit: cover;
 }
-#bt button{
-    width: 150px;
-    height: 32px;
-    letter-spacing: 3px;
-    background-color: rgb(12, 136, 41);
-    color: white;
+
+.reviews .reviews-slider .box h3{
+    color:var(--black);
+    font-size: 2.2rem;
+    padding:.5rem 0;
+}
+
+.reviews .reviews-slider .box p{
+    color:var(--light-color);
+    font-size: 1.4rem;
+    padding:1rem 0;
+    line-height: 2;
+}
+
+.reviews .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
     border: none;
     cursor: pointer;
 }
-@media screen and (max-width:1000px){
-    #about p{
-        font-size: 10px;
-    }
-}
-@media screen and (max-width:760px){
-    #about p{
-        font-size: 20px;
-    }
-}
-/* about */
-
-/* contact */
-#contact{
-    margin-top: 100px;
-}
-#contact h1{
+.reviews .card i{
+    font-size: 50px;
     text-align: center;
-    font-weight: bold;
-    margin-top: 50px;
-    color: rgb(12, 136, 41);
-    text-shadow: 1px 1px 1px black;
-    border-bottom: 2px solid rgb(12, 136, 41);
-}
-#contact input{
-    background-color: rgb(230, 226, 219);
-}
-#contact input::placeholder{
-    color: rgb(0, 6, 2);
-}
-#contact textarea{
-    background-color: rgb(13, 101, 37);
-}
-#contact textarea::placeholder{
-    color: white;
-}
-#messagebtn{
-    text-align: center;
-}
-#messagebtn button{
-    width: 200px;
-    height: 30px;
-    letter-spacing: 3px;
-    font-weight: bold;
-    background: transparent;
-    border: 2px solid rgb(46, 11, 11);
-    color: rgb(19, 1, 1);
-    transition: 0.5s;
-    cursor: pointer;
-}
-#messagebtn button:hover{
-    background-color: rgb(37, 137, 67);
-}
-/* contact */
-
-/* footer */
-#footer{
-    width: 100%;    
-    background-color: rgb(12, 93, 33);
-    box-shadow: 0px 0px 5px black;
-    margin-top: 100px;
-}
-#footer h1{
-    color: white;
-    padding-top: 30px;
-}
-#footer p{
-    color: white;
-}
-.icons i{
-    background-color: white;
-    color: #1b891d;
-    border-radius: 50px;
-    padding: 6px;
-    font-size: 30px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-.icons i:hover{
-    background-color: rgb(22, 132, 57);
-    color: white;
-}
-.copyright{
-    color: white;
+    color: #22761a;
     margin-top: 20px;
 }
-.credite{
-    color: white;
+.reviews .card .card-body h3{
+    font-weight: 600;
 }
-/* footer */
-html{
-    scroll-behavior: smooth;
-}
-.arrow{
-    position: fixed;
-    background-color: rgb(19, 148, 32);
-    border-radius: 50px;
-    height: 50px;
-    bottom: 40px;
-    right: 50px;
-    text-decoration: none;
+.reviews .card .card-body{
     text-align: center;
-    line-height: 50px;
+}
+
+.reviews .reviews-slider .box .stars{
+    padding-top: .5rem;
+}
+
+.reviews .reviews-slider .box .stars i{
+    font-size: 1.7rem;
+    color:var(--green);
+}
+
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color:var(--black);
+    padding:1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.4rem;
+    color:var(--light-color);
+    padding:1rem 0;
+}
+
+.footer .box-container .box a i{
+    color:var(--green);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .box-container .box .map{
+    width:100%;
+}
+
+.footer .share{
+    padding:1rem 0;
+    text-align: center;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--green);
+    margin:0 .3rem;
+    border-radius: 50%; 
+}
+
+.footer .share a:hover{
+    background:var(--black);
+}
+
+.footer .credit{
+    border-top: var(--border);
+    margin-top: 2rem;
+    padding:0 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color:var(--light-color);
+    text-align: center;
+}
+
+.footer .credit span{
+    color:var(--green);
+}
+
+.loader-container{
+    position: fixed;
+    top:0; left: 0;
+    height:100%;
+    width: 100%;
+    z-index: 10000;
+    background:#f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-container.active{
+    display: none;
+}
+
+.loader-container img{
+    height:10rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header .header-1{
+        padding:2rem;
+    }
+
+    section{
+        padding:3rem 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    html{
+        scroll-padding-top: 0;
+    }
+
+    body{
+        padding-bottom: 6rem;
+    }
+
+    .header .header-2{
+        display:none;
+    }
+
+    .bottom-navbar{
+        display: block;
+    }
+
+    #search-btn{
+        display: inline-block;
+        
+    }
+
+    .header .header-1{
+        box-shadow: var(--box-shadow);
+        position: relative;
+    }
+
+    .header .header-1 .search-form{
+        position:absolute;
+        top:-115%; right:10rem;
+        width: 90%;
+        box-shadow: var(--box-shadow);
+    }
+
+    .header .header-1 .search-form.active{
+        top:115%;
+    }
+
+    .home .row .content{
+        text-align: center;
+    }
+
+    .home .row .content h3{
+        font-size: 3.5rem;
+    }
+
+    .newsletter{
+        background-position: right;
+    }
+
+    .newsletter form{
+        margin-left:0;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
+/*----------about us page----------*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
 }
     </style>
+    
 </head>
 <body>
-    <!-- header section starts  -->
+    
+   
+<!-- header section starts  -->
 
- <header class="header">
+<header class="header">
 
     <div class="header-0">
        
-        <a href="#" class="logo"><img src="images/rda logo.png" alt=""></a>
+        <a href="index.html" class="logo"><img src="images/RDA BULK PACKAGING.jpg" alt=""></a>
         <div class="header-1">
         <form action="" class="search-form">
             <input type="search" name="" placeholder="search here..." id="search-box">
-           </form>
-  
-       
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
     </div>
-  </div>
-  
+</div>
    <div class="header-2">
         
     <nav>
@@ -400,317 +1140,438 @@ html{
           <input type="radio" name="slider" id="menu-btn">
           <input type="radio" name="slider" id="close-btn">
           <ul class="nav-links">
-          
-            <li><a href="index.html">Home</a></li>
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="#">Home</a></li>
             <li>
                 <a href="about.html" class="desktop-item">About</a>
-            </li>
-            <li>
-              <a href="services.html" class="desktop-item">Services</a>
-             </li>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+               
+             <ul class="drop-menu">
+                          <li><a href="about.html">About Company</a></li>
+                          <li><a href="100%rpp.html">100% RPP</a></li>
+                          <li><a href="sustainability.html">Sustainability</a></li>
+                          <li><a href="circular.html">Circular Economy</a></li>
+                        </ul>
+                   
+              </li>
+              <li><a href="Shop page.html">Shop</a></li>
+            
+           <li>
             <li>
               <a href="Industries.html" class="desktop-item">Industries</a>
-             
-             </li>
-              <li><a href="#" class="desktop-item">All Products</a></li>
-             
-              <li><a href="contact us.html">Contact Us</a></li>
-       
-         
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Mega Menu</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img src="image/cc.png" alt="">
+                  </div>
+                  <div class="row">
+                  
+                    <ul class="mega-links">
+                      <li><a href="food grade bags.html">Food Grade</a></li>
+                      <li><a href="Feed Grade.html">Feed Grade</a></li>
+                      <li><a href="Skip Industry.html">Skip Industry</a></li>
+                      <li><a href="Pharma industry.html">Pharma Grade</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    
+                    <ul class="mega-links">
+                        <li><a href="Chemical.html">Chemical Industry</a></li>
+                        <li><a href="rindustry.html">Recycling Industry</a></li>
+                        <li><a href="land industry.html">Landscaping & Horti</a></li>
+                        <li><a href="Agriculture.html">Agriculture & seeds</a></li>
+                     
+                    </ul>
+                  </div>
+                  <div class="row">
+                   <ul class="mega-links">
+                      <li><a href="Mining and Quarrying.html">Mining and quarrying</a></li>
+                      <li><a href="Building & Construction.html">Building and Construction</a></li>
+                      <li><a href="Forestry and Timber.html">Forestry and Timber</a></li>
+                      <li><a href="Industries.html">And Many More..</a></li>
+                    </ul>
+                  </div>
+                  </div>
+              </div>
+              </li>
+              <li>
+              <a href="#" class="desktop-item">All Products</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Mega Menu</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img src="image/Agricutural.png" alt="">
+                  </div>
+                  <div class="row">
+                    <header>Bulk Bags</header>
+                    <ul class="mega-links">
+                      <li><a href="Fertilizer bags.html">FERTILIZER BAGS</a></li>
+                      <li><a href="Standard bulk bags.html"> STANDARD BULK BAG</a></li>
+                      <li><a href="tunnel lift bulk bags.html">TUNNEL LIFT BULK BAGS</a></li>
+                      <li><a href="Top attachement.html">TOP ATTACHMENTS</a></li>
+                      <li><a href="bottom attachement.html">BOTTOM ATTACHMENTS</a></li>
+                      </ul>
+                  </div>
+                  <div class="row">
+                    <header>SPECIAL BULK BAGS</header>
+                    <ul class="mega-links">
+                      <li><a href="Food Garde baffle bags.html"> FOOD GRADE BAFFLE BAGS</a></li>
+                      <li><a href="type D bulk bags.html">TYPE D BAGS</a></li>
+                      <li><a href="type c bulk bags.html">TYPE C BAGS</a></li>
+                      <li><a href="Asbestos bags.html">ASBESTOS BAGS</a></li>
+                      <li><a href="Un approved bags.html">UN APPROVED BAGS</a></li>
+                </ul>
+                  </div>
+                  <div class="row">
+                    <header>SACKS AND SMALL BAGS</header>
+                    <ul class="mega-links">
+                      <li><a href="top hemmed bulk bags.html">PPWOVEN SACKS</a></li>
+                      <li><a href="Bopp Bulk Bags.html">BOPP BAGS</a></li>
+                      <li><a href="Borrow Bulk Bags.html">BORROW BAGS</a></li>
+                      <li><a href="AD star bags.html">AD STAR BAGS </a></li>
+                      <li><a href="mesh  Leno Bulk Bags.html"> LENO MESH BULK BAGS</a></li>
+                   </ul>
+                  </div>
+              
+            </li>
+            
+            <li><a href="contact us.html">Contact Us</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
       </nav>
-  </header>
-  
-  <!-- header section ends -->
+    </div>
 
-        <!-- home section -->
-        <div class="home">
-            <div class="content" data-aos="zoom-out-right">
-                <h3>Products We Deal With
-                </h3>
-                <h2>Category <span class="changecontent"></span></h2>
-                <p>RDA Bulk Packaging Ireland Ltd. has all the experience from RDA Bulk Packaging Ltd., 
-                    <br>who have been successfully supplying Bulk Bags to many different sectors in the UK, for over 24 years.
-                </p>
-                <a href="#" class="btn">Explore Now</a>
-            </div>
-            <div class="img"  data-aos="zoom-out-left">
-                <img src="./image/cc.png" alt="">
-            </div>
-        </div>
-        <!-- home section end -->
-<br>
-<br>
-<br>
+    
+</header>
 
-      <!-- gallary -->
-      <section id="gallary"    data-aos="fade-up"
-      data-aos-duration="1500">
-        <div class="container">
-            <h1>Product Category</h1>
-            <div class="row" style="margin-top: 30px;">
+<!-- header section ends -->
 
-                 <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <h3 class="text-center">Fertilizer Bags</h3>
-                        </div>
-                        <img src="image/fertilizer 2.jpg" alt="">
-                    </div>
-                </div>
+<!-- bottom navbar  -->
 
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <h3 class="text-center">Standard Bulk Bags</h3>
-                        </div>
-                        <img src="./image/std bags.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <h3 class="text-center">Tunnel Lift Bags</h3>
-                        </div>
-                        <img src="./image/tunne.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <h3 class="text-center">Top Attachment</h3>
-                        </div>
-                        <img src="./image/bgw1.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <h3 class="text-center">Bottom Attachment</h3>
-                        </div>
-                        <img src="./image/bottom1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <h3 class="text-center">One & Two Loops Bags</h3>
-                        </div>
-                        <img src="./image/2 Loop Bulk Bags.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#about" class="fas fa-list"></a>
+    <a href="#services" class="fas fa-list"></a>
+    <a href="#shop" class="fas fa-comments"></a>
+    <a href="#contact" class="fas fa-blog"></a>
+</nav>
 
 
-            <div class="row" style="margin-top: 30px;"    data-aos="fade-up"
-            data-aos-duration="1500">
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <h3 class="text-center">Food Grade Baffle Bags</h3>
-                        </div>
-                        <img src="./image/bafflebags.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <h3 class="text-center">Type C bags</h3>
-                        </div>
-                        <img src="./image/type c 1.jpg"  alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <h3 class="text-center"> Type D bags</h3>
-                        </div>
-                        <img src="./image/type d 1.jpg" alt="">
-                    </div>
-                </div>
-                
-                <div class="row" style="margin-top: 30px;">
-                    <div class="col-md-4 py-3 py-md-0">
-                        <div class="card">
-                            <div class="overlay">
-                                <h3 class="text-center">Asbestos Bags</h3>
-                            </div>
-                            <img src="./image/asbestose 1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4 py-3 py-md-0">
-                        <div class="card">
-                            <div class="overlay">
-                                <h3 class="text-center">UN Aprroved Bags</h3>
-                            </div>
-                            <img src="./image/un approves 1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4 py-3 py-md-0">
-                        <div class="card">
-                            <div class="overlay">
-                                <h3 class="text-center">Remote D Locks Bags</h3>
-                            </div>
-                            <img src="./image/remote discharge 1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4 py-3 py-md-0">
-                        <div class="card">
-                            <div class="overlay">
-                                <h3 class="text-center">PP Woven Bags</h3>
-                            </div>
-                            <img src="./image/top hemmed 3.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4 py-3 py-md-0">
-                        <div class="card">
-                            <div class="overlay">
-                                <h3 class="text-center">Bopp Bags </h3>
-                            </div>
-                            <img src="./image/small bags.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4 py-3 py-md-0">
-                        <div class="card">
-                            <div class="overlay">
-                                <h3 class="text-center">Borrow Bags</h3>
-                            </div>
-                            <img src="./image/barrow bags 1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4 py-3 py-md-0">
-                        <div class="card">
-                            <div class="overlay">
-                                <h3 class="text-center">AD Star Bags</h3>
-                            </div>
-                            <img src="./image/ad star 2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4 py-3 py-md-0">
-                        <div class="card">
-                            <div class="overlay">
-                                <h3 class="text-center">Leno Mesh Bags</h3>
-                            </div>
-                            <img src="./image/leno mesh 3.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4 py-3 py-md-0">
-                        <div class="card">
-                            <div class="overlay">
-                                <h3 class="text-center">Ultar Sonic Bags</h3>
-                            </div>
-                            <img src="./image/ultra sonic hemmed 4.jpg" alt="">
-                        </div>
-                    </div>
-            </div>
-        </div>
-      </section>
-      <!-- gallary -->
+
+<!-- home section starts  -->
 
 
-     <br>
-     <br>
-     <br>
-      <!-- about -->
-      <div class="container" id="about"    data-aos="fade-up"
-      data-aos-duration="1500">
-        <h1>ABOUT US</h1>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-md-6 py-3 py-md-0">
-                <div class="card">
-                    <img src="./image/buildingconstr.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-md-6 py-3 py-md-0">
-                    <p>With RDA Bulk Packaging Ireland Ltd on your side, transport and storage have been made easy for all your
-                         aggregates. We offer a wide range of products which helps in the transportation and storage of aggregates 
-                         in cost and time-efficient ways. RDA understands the importance of the correct packaging in the Mining and
-                          Quarrying industry. FIBCs are customisable and versatile making them a great solution to keep products
-                           contained and meet industry requirements.
-                           transport and storage have been made easy for all your landscaping material. 
-                           We offer a wide range of products which helps in the transportation and storage of landscaping material in cost 
-                           and time- efficient ways. Due to their versatility bulk bags are commonly used across the landscaping sector. 
-                           They are used for transport and storage for landscaping material.
-                           From animal feed to fertiliser, bulk bags are commonly used across the Agriculture sector. 
-                           Many bulk bags for the Agriculture sector come with various filling,
-                            top closure and discharge options, which is important as often the product inside needs to be kept dry and clean.
-                            We offer a wide range of products which helps in the transportation and storage of construction material in cost and time-efficient ways. </p>                
+<section class="home" id="home">
 
-                <div id="bt"><button>Read More...</button></divr>
-            </div>
-        </div>
-      </div>
-      <!-- about -->
+    <div class="row">
         
-     <br>
-     <br>
-     <br>
+        <div class="Hcard">
+        <div class="content">
+        <h3>Flexible, strong
+          and
+                cost effective</h3>
+                
+                 
+            <p>Your packaging partner committed to supplying 
+              
+                 you with the best</p>
+            <a href="Industries.html" class="btn">Explore</a>
+        </div>
+        </div>
+     </div>   
 
-      <!-- contact  -->
-      <div class="container" id="contact"    data-aos="fade-up"
-      data-aos-duration="1500">
-        <h1>CONTACT US</h1>
-        <div class="row">
-            <div class="col-md-4 py-1 py-md-0">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="usr" placeholder="Name">
-                </div>
+</section>
+
+<section class="deal">
+
+    <div class="content">
+       
+       <h1>Welcome to RDA Bulk Packaging Ireland Ltd.</h1>
+        <p>RDA Bulk Packaging Ireland Ltd. has all the experience from RDA Bulk Packaging Ltd., 
+            who have been successfully supplying a comprehensive range of FIBC’s (Flexible Intermediate Bulk Containers), also known as Bulk Bags to many different sectors 
+            across the UK, for over 23 years and more recently in Europe and other countries worldwide. Our teams are dedicated to supplying you with the best packaging solution
+             for your business.Along with Bulk bags we also supply many other products such as; woven polypropylene sacks, sandbags, garden waste/kerbside collection bags,
+              polythene bags, liners and many more. We hold stocks in our Irish warehouses for both immediate delivery, and also those products that have been manufactured 
+              to specific requirements for our existing customers that we have contracted with them to stock on their behalf.</p>
+        <a href="about.html" class="btn">More About Us</a>
+    </div>
+</section>
+<!-- home section end -->
+
+<div class="video-container">
+    <video autoplay loop muted plays-inline>
+        <source src="images/Logo-100- -rrp.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-content">
+        <h2>RDA 100% RPP</h2>
+        <p>
+            At RDA Bulk Packaging, we are proud to introduce a groundbreaking line of products – the 100% rPP bags.
+             These bags are a testament to our dedication to sustainability and reducing the environmental impact of packaging materials. 
+             100% rPP stands for 100% recycled polypropylene, a material that is derived from post-consumer and post-industrial waste. 
+             By harnessing the power of recycling, we have crafted a range of bags that not only serve their purpose effectively but also 
+             contribute significantly to a circular economy.
+
+            <br>Our Range of Products:
+            Discover the versatility and strength of our 100% rPP bags, thoughtfully designed to cater to diverse packaging needs
+            
+            <br>
+            
+           <a href="100%rpp.html" class="btn">Read More</a>
+            
+            
+            </p>
+       </div>
+       </div>
+       <br>
+      <!--card starts-->
+    <div style="display:inline-table; justify-content: space-between; width: 700px; height: 700px; background-color: #f5f5f5; margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; text-align: center;">
+        <h2 style="font-size: 34px;">Products</h2>
+        <img src="image/bags 3.jpg" alt="Card 1 Image" style="max-width: 100%; height: 450px; border-radius: 5px;">
+  
+        
+        
+    </div>
+    
+    <div style="display:inline-table; justify-content: space-between; width: 700px; height: 700px; background-color: #f5f5f5; margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; text-align: center;">
+        <h2 style="font-size: 34px;">Industries</h2>
+        <img src="image/cc.png" alt="Card 2 Image" style="max-width: 100%; height: auto; border-radius: 10px;">
+        
+    </div>
+ 
+      
+<!--card end-->
+    
+
+
+<!--card starts-->
+<style>
+    /* Styling for the text card */
+    .text-card {
+        background-color: #fff;
+        color: #141313;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Styling for the enlarged text */
+    .big-text {
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+<title>Big Styling Text Card</title>
+</head>
+<body>
+<div class="text-card">
+    <h2 class="font-size: 34px;">Sustainability</h2>
+    <p class="big-text">At RDA Bulk Packaging, our unwavering commitment to sustainability is deeply ingrained in every facet of our operations.
+        We believe that selecting sustainable materials is not just a choice; it's a responsibility—one we embrace wholeheartedly. 
+        We are proud to share that we've already taken significant strides in this direction by offering bulk bags made of 100% recycled content</p>
+        <a href="sustainability.html" class="btn">Know More</a>
+       <br>
+       <br>
+            
+            <img src="image/susfgf.jpg" alt="Image" style="max-width: 100%; height: 800px; ">
+           
+        </div>
+          
+    <!--card end-->
+</body>
+</html>
+       
+<section class="deal">
+    <div class="image">
+        <img src="image/circular eco.jpg" alt="">
+    </div>
+    <br>
+    <br>
+    <div class="content">
+        <h2>Circular Economy</h2>
+        <p>A circular economy is an economic model designed to minimize waste and maximize the efficient use of resources. 
+            It contrasts with the traditional linear economy, where products are made, used, and then discarded as waste. 
+            In a circular economy, resources are managed in a closed loop, where products, materials, and components are reused, refurbished, 
+            remanufactured, and recycled to extend their lifespan and reduce environmental impact.</p>
+        <h3>Key principles of a circular economy include:</h3>
+        <p>
+            Design for Longevity: Products are designed to be durable, easily repairable.
+
+            <br>Resource Efficiency: The efficient use of materials and resources is emphasized, reducing waste and environmental degradation.
+            
+           
+            </p>
+        <a href="circular.html" class="btn">Read More</a>
+    </div>
+
+    
+</section>
+
+<!-- deal section ends -->
+
+
+
+<!-- newsletter section starts -->
+
+<section class="newsletter">
+
+    <form action="">
+        <h3>subscribe for latest updates</h3>
+        <input type="email" name="" placeholder="enter your email" id="" class="box">
+        <input type="submit" value="subscribe" class="btn">
+        
+        <!--featured section ends-->
+    </form>
+
+</section>
+
+<!-- newsletter section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal">
+
+    <div class="content">
+        <h3>About Us</h3>
+        <h1>Your partner in packaging solutions</h1>
+        <p>RDA Bulk Packaging Ireland Ltd. has all the experience from RDA Bulk Packaging Ltd., a privately owned company that has been trading for over 23 years. 
+           Our core business is the importation and supply of Flexible Intermediate Bulk Containers (FIBC’s), otherwise known as bulk bags, tote bags or tay bags.
+           From the very early years in business we have continually re-invested and driven our business to grow the markets and products we supply and now successfully
+           supply products to customers in agricultural, chemical, recycling, waste management, building and many more business sectors.</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="image">
+        <img src="images/w6dpxw.jpg" alt="">
+    </div>
+
+</section>
+
+<!-- deal section ends -->
+
+
+<!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> <span>Advantages in RDA</span> </h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+            <div class="card">
+                <i class="fas fa-hotel"></i>
+                <div class="card-body">
+                <h3>Circular Economy</h3>
+                <p>RDA utilise a number of manufacturing facilities in India. Each of which holds a
+                     valid certificate for the manufacture of bulk bags from the Indian Institute of Packaging..</p>
+               
             </div>
-            <div class="col-md-4 py-1 py-md-0">
-                <div class="form-group">
-                    <input type="email" class="form-control" id="eml" placeholder="Email">
-                </div>
+
             </div>
-            <div class="col-md-4 py-1 py-md-0">
-                <div class="form-group">
-                    <input type="number" class="form-control" id="phn" placeholder="Phone">
+        </div>
+
+            <div class="swiper-slide box">
+                <div class="card">
+                    <i class="fas fa-cubes"></i>
+                    <div class="card-body">
+                <h3>R&D</h3>
+                <p>RDA operates from warehousing facilities based in Co.
+                     Meath, Republic of Ireland.It involves activities such as transportation, warehousing, logistics, and retailing.</p>
                 </div>
+
+            </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="card">
+                    <i class="fas fa-handshake"></i>
+                    <div class="card-body">
+                <h3>Partner Company</h3>
+                <p>RDA works closely with its freight forward companies to help maintain an excellent delivery service which allows us to offer deliveries across the Ireland & Europe.</p>
+                </div>
+
+            </div>
             </div>
             
+    
+</section>
+
+<!-- reviews section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our locations</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Ireland </a>
+            
+            
         </div>
-        <div class="form-group">
-            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i>home</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>about</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>services</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>products</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
         </div>
-        <div id="messagebtn"><button>Send Message</button></div>
-      </div>
-      <!-- contact end -->
 
+        <div class="box">
+            <h3>extra links</h3>
+           
+            <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+           
+            <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+   
 
-      <!-- footer -->
-      <footer id="footer"    data-aos="fade-up"
-      data-aos-duration="1500">
-        <h1 class="text-center">All Procducts Category</h1>
-       
-        <div class="icons text-center">
-            <i class="bx bxl-linkedin"></i>
-            <i class="bx bxl-twitter"></i>
-            <i class="bx bxl-facebook"></i>
-           <i class="bx bxl-instagram"></i>
-        </div>
-        <div class="copyright text-center">
-            &copy; Copyright <strong>Industries</strong> .All Rights Reserved
-        </div>
-        <div class="credite text-center">
-            Designed By <a href="#"><span>RDA Bulk packaging Ireland Ltd</span></a>
-        </div>
-      </footer>
-      <!-- footer -->
-
-      <a href="#" class="arrow"><i><img src="./image/up-arrow.png" alt="" width="50px"></i></a>
-
-
-
+  </div>
+  <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#"> <i class="fas fa-phone"></i> 0300 373 0194 </a>
+            <a href="#"> <i class="fas fa-envelope"></i>info@rda-ireland.ie</a>
+            
+        
     </div>
 
 
+    <div class="share">
+        <a href="https://www.linkedin.com/company/90670731/admin/feed/posts/" class="fab fa-linkedin"></a>
+        <a href="https://www.facebook.com/RDABulkPackagingIrelandLtd" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/home" class="fab fa-twitter"></a>
+        <a href="https://l.instagram.com/?u=http%3A%2F%2Frda-ireland.ie%2F&e=AT2SZzFvFHXNN4SdjpMH1cQmy5M96xv3xvvZqL-jGaNUOIgULUNDN3-SkPDcuzH-wAyhZAJOSywjo64SUc_alnsQ8XWAs85iAraRvXs" class="fab fa-instagram"></a>
+       
+        
+    </div>
+</div>
+    <div class="credit"> created by <span> 2024 RDA Bulk Packaging Ireland Private Limited</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- loader  -->
+
+<div class="loader-container">
+    <img src="image/loader-img.gif" alt="">
+</div>
 
 
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
 </body>
 </html>
