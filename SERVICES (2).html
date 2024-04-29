@@ -14,6 +14,160 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  
+}
+
+
+
+
+nav{
+    position:sticky;
+    z-index: 99;
+    width: 100%;
+   background: #1d9738;
+  }
+  nav .wrapper{
+    position: sticky;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+  }
+  
+  .wrapper .nav-links{
+    display: inline-flex;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  nav input{
+    display: none;
+  }
+
+.logo h3{
+    font-size: 30px;
+    font-weight: bold;
+   
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+        
+    }
+}
+
+
+
+
+
+.services-section{
+  background: url(bg.jpg);
+  background-size: cover;
+  padding: 60px 0;
+  opacity: 2221;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title{
+  text-align: center;
+  color: #0fa60a;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: #0fa60a;
+  margin: 40px auto;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box{
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #ebf1eb;
+  cursor: pointer;
+}
+
+.service-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: #0fa60a;
+  color:#0fa60a;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.service-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.service-box:hover .service-icon{
+  background: #0fa60a;
+  color: #ddd;
+}
+.service-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.service-desc{
+  font-size: 14px;
+}
+
+@media screen and (max-width:960px) {
+  .service-box{
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .service-box{
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .service-box{
+    max-width: 100%;
+  }
+}
+
+
+
+    </style>
     
 </head>
 <body>
@@ -159,15 +313,7 @@
 
 <!-- header section ends -->
 
-<!-- bottom navbar  -->
 
-<nav class="bottom-navbar">
-    <a href="#home" class="fas fa-home"></a>
-    <a href="#about" class="fas fa-list"></a>
-    <a href="#services" class="fas fa-list"></a>
-    <a href="#shop" class="fas fa-comments"></a>
-    <a href="#contact" class="fas fa-blog"></a>
-</nav>
 
 <!-- login form  -->
 
@@ -192,195 +338,86 @@
 
 </div>
 
-<!-- home section starts  -->
+<div class="services-section">
+    <div class="inner-width">
+      <h1 class="section-title">Our Services</h1>
+      <div class="border"></div>
+      <div class="services-container">
 
 
-<section class="home" id="home">
-
-    <div class="row">
         
-        <div class="Hcard">
-        <div class="content">
-        <h3>Flexible, strong
-          and
-                cost effective</h3>
-                
-                 
-            <p>Your packaging partner committed to supplying 
-              
-                 you with the best</p>
-            <a href="Industries.html" class="btn">Explore</a>
+
+
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-hotel"></i>
+          </div>
+          <div class="service-title">Manufacturing</div>
+          <div class="service-desc">
+            RDA utilise a number of manufacturing facilities in India. Each of which holds a valid certificate for the manufacture of bulk bags from the Indian Institute of Packaging,
+                   Cotecna in India, Labordata in Germany and several other internationally recognised test houses.
+          </div>
         </div>
+
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-cubes"></i>
+          </div>
+          <div class="service-title">Distribution</div>
+          <div class="service-desc">
+            RDA utilise a number of manufacturing facilities in India. Each of which holds a valid certificate for the manufacture of bulk bags from the Indian
+                   Institute of Packaging, Cotecna in India, Labordata in Germany and several other internationally recognised test houses.
+          </div>
         </div>
-     </div>   
 
-</section>
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <div class="service-title">Partner Company</div>
+          <div class="service-desc">
+            RDA utilise a number of manufacturing facilities in India. Each of which holds a valid certificate for the manufacture of bulk bags from 
+            the Indian Institute of Packaging, Cotecna in India, Labordata in Germany and several other internationally recognised test houses.
+          </div>
+        </div>
 
-<section class="deal">
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-globe-asia"></i>
+          </div>
+          <div class="service-title">Around The World</div>
+          <div class="service-desc">
+            With our flexible system and excellent supply chain we are able to cater the packaging requirements across the globe  
+          </div>
+        </div>
 
-    <div class="content">
-       
-       <h1>Welcome to RDA Bulk Packaging Ireland Ltd.</h1>
-        <p>RDA Bulk Packaging Ireland Ltd. has all the experience from RDA Bulk Packaging Ltd., 
-            who have been successfully supplying a comprehensive range of FIBC’s (Flexible Intermediate Bulk Containers), also known as Bulk Bags to many different sectors 
-            across the UK, for over 23 years and more recently in Europe and other countries worldwide. Our teams are dedicated to supplying you with the best packaging solution
-             for your business.Along with Bulk bags we also supply many other products such as; woven polypropylene sacks, sandbags, garden waste/kerbside collection bags,
-              polythene bags, liners and many more. We hold stocks in our Irish warehouses for both immediate delivery, and also those products that have been manufactured 
-              to specific requirements for our existing customers that we have contracted with them to stock on their behalf.</p>
-        <a href="about.html" class="btn">More About Us</a>
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <div class="service-title">Fastest Delivery</div>
+          <div class="service-desc">
+            With our chain of Network at various location for warehousing we supply you goods in fastest way compared to what is available in the market. 
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-sitemap"></i>
+          </div>
+          <div class="service-title">R and D</div>
+          <div class="service-desc">
+            RDA operates from warehousing facilities based in Co.
+                   Meath, Republic of Ireland.It involves activities such as transportation, warehousing, logistics, and retailing
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-<!-- home section end -->
+  </div>
+<br>
+<br>
 
-<div class="video-container">
-    <video autoplay loop muted plays-inline>
-        <source src="images/Logo-100- -rrp.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="video-content">
-        <h2>RDA 100% RPP</h2>
-        <p>
-            At RDA Bulk Packaging, we are proud to introduce a groundbreaking line of products – the 100% rPP bags.
-             These bags are a testament to our dedication to sustainability and reducing the environmental impact of packaging materials. 
-             100% rPP stands for 100% recycled polypropylene, a material that is derived from post-consumer and post-industrial waste. 
-             By harnessing the power of recycling, we have crafted a range of bags that not only serve their purpose effectively but also 
-             contribute significantly to a circular economy.
-
-            <br>Our Range of Products:
-            Discover the versatility and strength of our 100% rPP bags, thoughtfully designed to cater to diverse packaging needs
-            
-            <br>
-            
-           <a href="RPP.html" class="btn">Read More</a>
-            
-            
-            </p>
-       </div>
-       </div>
-       <br>
-      <!--card starts-->
-    <div style="display:inline-table; justify-content: space-between; width: 700px; height: 700px; background-color: #f5f5f5; margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; text-align: center;">
-        <h2 style="font-size: 34px;">Products</h2>
-        <img src="image/bags 3.jpg" alt="Card 1 Image" style="max-width: 100%; height: 450px; border-radius: 5px;">
   
-        
-        
-    </div>
-    
-    <div style="display:inline-table; justify-content: space-between; width: 700px; height: 700px; background-color: #f5f5f5; margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; text-align: center;">
-        <h2 style="font-size: 34px;">Industries</h2>
-        <img src="image/cc.png" alt="Card 2 Image" style="max-width: 100%; height: auto; border-radius: 10px;">
-        
-    </div>
- 
-      
-<!--card end-->
-    
-
-
-<!--card starts-->
-<style>
-    /* Styling for the text card */
-    .text-card {
-        background-color: #fff;
-        color: #141313;
-        padding: 20px;
-        text-align: center;
-    }
-
-    /* Styling for the enlarged text */
-    .big-text {
-        font-size: 20px;
-        font-weight: bold;
-    }
-</style>
-<title>Big Styling Text Card</title>
-</head>
-<body>
-<div class="text-card">
-    <h2 class="font-size: 34px;">Sustainability</h2>
-    <p class="big-text">At RDA Bulk Packaging, our unwavering commitment to sustainability is deeply ingrained in every facet of our operations.
-        We believe that selecting sustainable materials is not just a choice; it's a responsibility—one we embrace wholeheartedly. 
-        We are proud to share that we've already taken significant strides in this direction by offering bulk bags made of 100% recycled content</p>
-        <a href="sustainability.html" class="btn">Know More</a>
-       <br>
-       <br>
-            
-            <img src="image/susfgf.jpg" alt="Image" style="max-width: 100%; height: 800px; ">
-           
-        </div>
-          
-    <!--card end-->
-</body>
-</html>
-       
-<section class="deal">
-    <div class="image">
-        <img src="image/circular eco.jpg" alt="">
-    </div>
-    <br>
-    <br>
-    <div class="content">
-        <h2>Circular Economy</h2>
-        <p>A circular economy is an economic model designed to minimize waste and maximize the efficient use of resources. 
-            It contrasts with the traditional linear economy, where products are made, used, and then discarded as waste. 
-            In a circular economy, resources are managed in a closed loop, where products, materials, and components are reused, refurbished, 
-            remanufactured, and recycled to extend their lifespan and reduce environmental impact.</p>
-        <h3>Key principles of a circular economy include:</h3>
-        <p>
-            Design for Longevity: Products are designed to be durable, easily repairable.
-
-            <br>Resource Efficiency: The efficient use of materials and resources is emphasized, reducing waste and environmental degradation.
-            
-           
-            </p>
-        <a href="circular.html" class="btn">Read More</a>
-    </div>
-
-    
-</section>
-
-<!-- deal section ends -->
-
-
-
-<!-- newsletter section starts -->
-
-<section class="newsletter">
-
-    <form action="">
-        <h3>subscribe for latest updates</h3>
-        <input type="email" name="" placeholder="enter your email" id="" class="box">
-        <input type="submit" value="subscribe" class="btn">
-        
-        <!--featured section ends-->
-    </form>
-
-</section>
-
-<!-- newsletter section ends -->
-
-<!-- deal section starts  -->
-
-<section class="deal">
-
-    <div class="content">
-        <h3>About Us</h3>
-        <h1>Your partner in packaging solutions</h1>
-        <p>RDA Bulk Packaging Ireland Ltd. has all the experience from RDA Bulk Packaging Ltd., a privately owned company that has been trading for over 23 years. 
-           Our core business is the importation and supply of Flexible Intermediate Bulk Containers (FIBC’s), otherwise known as bulk bags, tote bags or tay bags.
-           From the very early years in business we have continually re-invested and driven our business to grow the markets and products we supply and now successfully
-           supply products to customers in agricultural, chemical, recycling, waste management, building and many more business sectors.</p>
-        <a href="#" class="btn">Read More</a>
-    </div>
-
-    <div class="image">
-        <img src="images/w6dpxw.jpg" alt="">
-    </div>
-
-</section>
-
-<!-- deal section ends -->
 
 
 <!-- reviews section starts  -->
