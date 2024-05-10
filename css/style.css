@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
-    --green:#18355e;
+    --green:#278c51;
     --dark-color:rgb(33, 145, 80)35
     --black:#444;
     --light-color:#666;
@@ -171,7 +171,7 @@ section{
 
 .navbar {
 	overflow: hidden;
-	background: #06b134;
+	background: #4CAF50;
 }
 .navbar a {
 	float: left;
@@ -403,8 +403,8 @@ section{
 
 .home{
     width: 100%;
-    height: 140vh;
-    background: url(../images/parent5.jpg)no-repeat;
+    height: 110vh;
+    background: url(../image/background\ PNG.png)no-repeat;
     background-size: cover;
     opacity:222222;
     
@@ -440,7 +440,7 @@ section{
 }
 
 .home .row .content h3{
-    color:#0f3160;
+    color:#fff;
    
     font-size: 6.2rem;
     font-weight:bolder;
@@ -458,12 +458,12 @@ section{
 }
 
 .Hcard {
-   background-color:#ffffff67;
+   background-color:#83bd8377;
     border-radius: 110px;
-    box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.118);
+    box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.2);
     justify-content: space-around; /* Adjust the spacing between cards */
     margin: 2px;
-    max-width: 500px;
+    max-width: 350px;
     padding: 50px;
     text-align:center;
     transition: transform 0.2s ease-in-out;
@@ -473,7 +473,8 @@ nav{
     position:sticky;
     z-index: 99;
     width: 100%;
-  
+    
+    background: #1d9738;
   }
   nav .wrapper{
     position: relative;
@@ -503,14 +504,14 @@ nav{
     transition: all 0.3s ease;
   }
   .nav-links li a:hover{
-    background: #3a3b3c50;
+    background: #3A3B3C;
   }
   .nav-links .mobile-item{
     display: none;
   }
   .nav-links .drop-menu{
     position: absolute;
-    background: #242526cd;
+    background: #242526;
     width: 180px;
     line-height: 45px;
     top: 85px;
@@ -542,7 +543,7 @@ nav{
     visibility: hidden;
   }
   .mega-box .content{
-    background: #242526cd;
+    background: #242526;
     padding: 25px 20px;
     display: flex;
     width: 100%;
@@ -707,658 +708,6 @@ nav{
   }
   
 
-
-
-
-
-
-
-
-
-
- 
- 
-  
-  img,
-  video {
-    width: 100%;
-    display: flex;
-  }
- 
- 
-  
-
-  
-
-  
-  .booking {
-    background-color: #ffffff;
-  }
-  
-  .booking__container form {
-    max-width: 350px;
-    margin: auto;
-    display: grid;
-    gap: 2rem;
-  }
-  
-  .input__group {
-    display: grid;
-    gap: 1rem;
-  }
-  
-  .input__group label {
-    font-weight: 600;
-    color: var(--white);
-  }
-  
-  .input__group input {
-    width: 100%;
-    font-size: 1rem;
-    padding: 0.5rem;
-    color: var(--white);
-    background-color: transparent;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid var(--text-light);
-    border-radius: 5px;
-  }
-  
-  .input__group input::placeholder {
-    color: var(--text-light);
-  }
-  
-  .about {
-    position: relative;
-    isolation: isolate;
-  }
-  
-  .about::before {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    right: 0;
-    height: 75%;
-    width: 100%;
-    background-image: url("assets/background-image");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    opacity: 0.05;
-    z-index: -1;
-  }
-  
-  .about__container {
-    display: grid;
-    gap: 4rem 2rem;
-  }
-  
-  .about__grid {
-    display: grid;
-    gap: 1rem;
-  }
-  
-  .about__card {
-    height: 100%;
-    padding: 2rem;
-    display: grid;
-    place-content: center;
-    text-align: center;
-  }
-  
-  .about__card span {
-    margin-bottom: 1rem;
-    font-size: 3rem;
-    color: var(--secondary-color);
-  }
-  
-  .about__card h4 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    font-weight: 800;
-    font-family: var(--header-font);
-    color: var(--text-dark);
-  }
-  
-  .about__card p {
-    color: var(--text-light);
-  }
-  
-  .about__card:nth-child(4) {
-    background-color: var(--primary-color);
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .about__card:nth-child(4) :is(h4, p) {
-    color: var(--white);
-  }
-  
-  .about__image img {
-    height: 100%;
-    object-fit: cover;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .about__content .section__description {
-    margin-bottom: 2rem;
-  }
-  
-  .room__container {
-    padding-block: 15rem;
-  }
-  
-  .room__container :is(.section__subheader, .section__header) {
-    padding-inline: 1rem;
-    text-align: center;
-  }
-  
-  .room__grid {
-    max-width: 1500px;
-    margin-inline: auto;
-    margin-top: 4rem;
-    display: grid;
-    gap: 0 1rem;
-  }
-  
-  .room__card img {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .room__card__details {
-    margin-inline: 1rem;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    background-color: #e6eee8;
-    transform: translateY(-50%);
-    border-radius: 15px;
-    box-shadow: 5px 5px 20px rgba(6, 101, 34, 0.785);
-  }
-  
-  .room__card__details h4 {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-    font-weight: 800;
-    font-family: var(--header-font);
-    color: var(--text-dark);
-  }
-  
-  .room__card__details p {
-    color: var(--text-light);
-  }
-  
-  .room__card__details h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--secondary-color);
-  }
-  
-  .room__card__details h3 span {
-    font-size: 0.8rem;
-  }
-  
-  .intro {
-    position: relative;
-    isolation: isolate;
-    background-color: var(--primary-color);
-  }
-  
-  .intro::before {
-    position: absolute;
-    content: "";
-    right: 0;
-    height: 100%;
-    width: calc(100vw / 4);
-    background-color: var(--secondary-color);
-    z-index: -1;
-  }
-  .intro__cotent{
-    height: 115px ;
-    width: 500px;
-    
-  }
-  .intro__container {
-    display: grid;
-    gap: 4rem 2rem;
-  }
-  
-  .intro__container .section__subheader {
-    color: var(--secondary-color);
-  }
-  
-  .intro__container :is(.section__header, .section__description) {
-    margin-bottom: 1rem;
-    color: var(--white);
-  }
-  
-  .intro__video {
-    max-width: 50px;
-     
-    min-inline-size: 2000px;
-    
-    box-shadow: 5px 5px 20px rgba(88, 91, 89, 0.636);
-  }
-
-  .feature__container :is(.section__subheader, .section__header) {
-    text-align: center;
-  }
-  
-  .feature__grid {
-    margin-top: 4rem;
-    display: grid;
-    gap: 2rem;
-  }
-  
-  .feature__card span {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    font-size: 2.5rem;
-    color: var(--secondary-color);
-  }
-  
-  .feature__card h4 {
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    font-weight: 800;
-    font-family: var(--header-font);
-    counter-reset: var(--text-dark);
-  }
-  
-  .feature__card p {
-    color: var(--text-light);
-  }
-  
-  .menu {
-    background-color: var(--extra-light);
-  }
-  
-  .menu__header {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .menu__items {
-    list-style: none;
-    margin-block: 4rem;
-    display: grid;
-    gap: 1rem 4rem;
-  }
-  
-  .menu__items li {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .menu__items li:hover {
-    background-color: var(--primary-color);
-  }
-  
-  .menu__items img {
-    max-width: 100px;
-    border-radius: 2px;
-  }
-  
-  .menu__items h4 {
-    margin-bottom: 0.5rem;
-    font-size: 1.25rem;
-    font-weight: 800;
-    font-family: var(--header-font);
-    color: var(--text-dark);
-    transition: 0.3s;
-  }
-  
-  .menu__items p {
-    max-width: 400px;
-    color: var(--text-light);
-    transition: 0.3s;
-  }
-  
-  .menu__items li:hover :is(h4, p) {
-    color: var(--white);
-  }
-  
-  .menu__images {
-    margin-bottom: 4rem;
-    display: grid;
-    gap: 1rem;
-  }
-  
-  .menu__images img {
-    border-radius: 5px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .menu__banner {
-    list-style: none;
-    padding: 4rem 2rem;
-    display: grid;
-    gap: 2rem;
-    text-align: center;
-    background-color: var(--primary-color);
-    border-radius: 5px;
-  }
-  
-  .menu__banner span {
-    font-size: 3.5rem;
-    color: var(--secondary-color);
-  }
-  
-  .menu__banner h4 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--white);
-  }
-  
-  .menu__banner p {
-    color: var(--text-light);
-  }
-  
-  .news__header {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .news__grid {
-    margin-top: 4rem;
-    display: grid;
-    gap: 2rem 1rem;
-  }
-  
-  .news__card img {
-    margin-bottom: 2rem;
-    border-radius: 5px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .news__card__title {
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .news__card__title p {
-    font-weight: 500;
-    color: var(--text-light);
-  }
-  
-  .news__card h4 {
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    font-weight: 800;
-    font-family: var(--header-font);
-    color: var(--text-dark);
-  }
-  
-  .news__card p {
-    color: var(--text-light);
-  }
-  
-  .footer {
-    background-color: var(--primary-color);
-  }
-  
-  .footer__container {
-    display: grid;
-    gap: 4rem 2rem;
-  }
-  
-  .footer__logo {
-    margin-bottom: 2rem;
-    color: var(--white);
-  }
-  
-  .footer__logo div {
-    background-color: var(--secondary-color);
-  }
-  
-  .footer__socials {
-    list-style: none;
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .footer__socials a {
-    padding: 6px 10px;
-    font-size: 1.25rem;
-    color: var(--text-light);
-    background-color: var(--white);
-    border-radius: 100%;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .footer__socials a:hover {
-    color: var(--white);
-    background-color: var(--secondary-color);
-  }
-  
-  .footer__col h4 {
-    margin-bottom: 2rem;
-    font-size: 1.25rem;
-    font-weight: 800;
-    font-family: var(--header-font);
-    color: var(--white);
-  }
-  
-  .footer__links {
-    list-style: none;
-  }
-  
-  .footer__links li {
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .footer__links a {
-    color: var(--text-light);
-    transition: 0.3s;
-  }
-  
-  .footer__links a:hover {
-    color: var(--secondary-color);
-  }
-  
-  .footer__col:last-child .footer__links li {
-    margin-bottom: 2rem;
-  }
-  
-  .footer__links span {
-    font-size: 2rem;
-    color: var(--secondary-color);
-  }
-  
-  .footer__links h5 {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    font-weight: 800;
-    font-family: var(--header-font);
-    color: var(--white);
-  }
-  
-  .footer__links p {
-    color: var(--text-light);
-  }
-  
-  .footer__bar {
-    padding: 1rem;
-    font-size: 0.8rem;
-    color: var(--text-light);
-    text-align: center;
-  }
-  
-  @media (width > 480px) {
-    .about__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .about__image:nth-child(1) {
-      grid-area: 1/2/2/3;
-    }
-  
-    .about__image:nth-child(1),
-    .about__card:nth-child(4) {
-      transform: translateY(2rem);
-    }
-  
-    .feature__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .menu__images {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .menu__banner {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .news__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .footer__container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .footer__col:first-child {
-      grid-column: 1/3;
-    }
-  }
-  
-  @media (width > 768px) {
-    nav {
-      position: static;
-      padding-inline: 1rem;
-      background-color: var(--primary-color);
-    }
-  
-    .nav__bar {
-      max-width: var(--max-width);
-      margin: auto;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: var(--white);
-      border-radius: 5px;
-      transform: translateY(50%);
-    }
-  
-    .nav__header {
-      padding: 0;
-      background-color: transparent;
-    }
-  
-    .nav__menu__btn {
-      display: none;
-    }
-  
-    .nav__links {
-      width: fit-content;
-      padding: 0;
-      position: static;
-      flex-direction: row;
-      transform: none;
-      background-color: transparent;
-    }
-  
-    .booking__container form {
-      max-width: 100%;
-      grid-template-columns: repeat(4, 1fr);
-      align-items: center;
-    }
-  
-    .about::before {
-      height: 75%;
-      width: 75%;
-    }
-  
-    .about__container {
-      grid-template-columns: repeat(2, 1fr);
-      align-items: center;
-    }
-  
-    .room__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .intro__container {
-      grid-template-columns: repeat(2, 1fr);
-      align-items: center;
-    }
-  
-    .feature__grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-    .menu__header {
-      flex-direction: row;
-    }
-  
-    .menu__items {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .menu__images {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-    .menu__banner {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  
-    .news__header {
-      flex-direction: row;
-    }
-  
-    .news__grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-    .footer__container {
-      grid-template-columns: 2fr repeat(2, 1fr);
-    }
-  
-    .footer__col:first-child {
-      grid-column: unset;
-    }
-  }
-  
-  @media (width > 1024px) {
-    .about__grid {
-      gap: 2rem;
-    }
-  
-    .room__grid {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-    }
-  
-    .menu__images {
-      gap: 2rem;
-    }
-  
-    .news__grid {
-      gap: 2rem;
-    }
-  }
-  
-
-
-
-
 .swiper-button-next,
 .swiper-button-prev{
     border:var(--border-hover);
@@ -1380,7 +729,7 @@ nav{
 }
 
 .newsletter{
-    background:url(../images/parent6.jpg) no-repeat;
+    background:url(../image/Green\ landscape.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1545,6 +894,7 @@ nav{
     color:var(--green);
 }
 
+
 .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -1628,8 +978,7 @@ nav{
 }
 
 .loader-container img{
-    height:100;
-    width: 50;
+    height:10rem;
 }
 
 
