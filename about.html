@@ -8,7 +8,7 @@
 		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 	
 		:root{
-			--green:#278c51;
+			--green:#18355e;
 			--dark-color:rgb(33, 145, 80)35
 			--black:#444;
 			--light-color:#666;
@@ -411,7 +411,7 @@
 		.home{
 			width: 100%;
 			height: 110vh;
-			background: url(image/std\ bags.jpg)no-repeat;
+			background: url(img/2\ Loop\ Bulk\ Bags.jpg)no-repeat;
 			background-size: cover;
 			opacity:222222;
 			
@@ -447,7 +447,7 @@
 		}
 		
 		.home .row .content h3{
-			color:#fff;
+			color:#0a0a0a;
 		   
 			font-size: 6.2rem;
 			font-weight:bolder;
@@ -456,23 +456,23 @@
 		}
 		
 		.home .row .content p{
-			color:#0e0000b5;
+			color:#18355e;
 			background-attachment: var(--box-shadow);
-			font-size: 2.5rem;
-			font-weight: bolder;
+			font-size: 2.4rem;
+			font-weight:400;
 			font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 			padding:2rem 0;
 		}
 		
 		.Hcard {
-		   background-color:#abb3ab70;
+		   background-color:#ffffff90;
 			border-radius: 110px;
-			box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.2);
+			box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.118);
 			justify-content: space-around; /* Adjust the spacing between cards */
 			margin: 2px;
-			max-width: 700px;
-			padding: 70px;
-			text-align:start;
+			max-width: 800px;
+			padding: 30px;
+			text-align:center;
 			transition: transform 0.2s ease-in-out;
 		}
 		
@@ -481,7 +481,7 @@
 			z-index: 99;
 			width: 100%;
 			
-			background: #1d9738;
+			background: #18355e;
 		  }
 		  nav .wrapper{
 			position: relative;
@@ -510,22 +510,22 @@
 			border-radius: 5px;
 			transition: all 0.3s ease;
 		  }
-		  .nav-links li a:hover{
-			background: #3A3B3C;
-		  }
-		  .nav-links .mobile-item{
-			display: none;
-		  }
-		  .nav-links .drop-menu{
-			position: absolute;
-			background: #242526;
-			width: 180px;
-			line-height: 45px;
-			top: 85px;
-			opacity: 0;
-			visibility: hidden;
-			box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-		  }
+  .nav-links li a:hover{
+    background: #3a3b3c50;
+  }
+  .nav-links .mobile-item{
+    display: none;
+  }
+  .nav-links .drop-menu{
+    position: absolute;
+    background: #242526cd;
+    width: 180px;
+    line-height: 45px;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
 		  .nav-links li:hover .drop-menu,
 		  .nav-links li:hover .mega-box{
 			transition: all 0.3s ease;
@@ -550,7 +550,7 @@
 			visibility: hidden;
 		  }
 		  .mega-box .content{
-			background: #242526;
+			background: #242624cd;
 			padding: 25px 20px;
 			display: flex;
 			width: 100%;
@@ -955,8 +955,9 @@
 			display: none;
 		}
 		
-		.loader-container img{
-			height:10rem;
+		.loader-container video{
+			height:50rem;
+			width: 100rem;
 		}
 		
 		
@@ -1071,6 +1072,7 @@
 <body>
     
    
+   
 <!-- header section starts  -->
 
 <header class="header">
@@ -1092,20 +1094,18 @@
     </div>
 </div>
    <div class="header-2">
-        
-    <nav>
+        <nav>
         <div class="wrapper">
          
           <input type="radio" name="slider" id="menu-btn">
           <input type="radio" name="slider" id="close-btn">
           <ul class="nav-links">
             <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-            <li><a href="#">Home</a></li>
-			<li>
+            <li><a href="index.html">Home</a></li>
+            <li>
                 <a href="about.html" class="desktop-item">About</a>
                 <input type="checkbox" id="showDrop">
                 <label for="showDrop" class="mobile-item">Dropdown Menu</label>
-				
                
              <ul class="drop-menu">
                           <li><a href="about.html">About Company</a></li>
@@ -1115,8 +1115,9 @@
                         </ul>
                    
               </li>
-			  <li><a href="Shop page.html">Shop</a></li>
-			  <li><a href="SERVICES (2).html">Services</a></li>
+              <li><a href="Shop page.html">Shop</a></li>
+            
+           <li>
             <li>
               <a href="Industries.html" class="desktop-item">Industries</a>
               <input type="checkbox" id="showMega">
@@ -1146,19 +1147,18 @@
                     </ul>
                   </div>
                   <div class="row">
-                   
-                    <ul class="mega-links">
+                   <ul class="mega-links">
                       <li><a href="Mining and Quarrying.html">Mining and quarrying</a></li>
                       <li><a href="Building & Construction.html">Building and Construction</a></li>
                       <li><a href="Forestry and Timber.html">Forestry and Timber</a></li>
-                      <li><a href="#">And Many More..</a></li>
+                      <li><a href="Industries.html">And Many More..</a></li>
                     </ul>
                   </div>
                   </div>
               </div>
               </li>
               <li>
-              <a href="#" class="desktop-item">All Products</a>
+              <a href="All Products page.html" class="desktop-item">All Products</a>
               <input type="checkbox" id="showMega">
               <label for="showMega" class="mobile-item">Mega Menu</label>
               <div class="mega-box">
@@ -1169,26 +1169,22 @@
                   <div class="row">
                     <header>Bulk Bags</header>
                     <ul class="mega-links">
-                      <li><a href="Fertilizer bags.html">FERTILIZER BAGS</a></li>
                       <li><a href="Standard bulk bags.html"> STANDARD BULK BAG</a></li>
+                      <li><a href="Fertilizer bags.html">FERTILIZER BAGS</a></li>
                       <li><a href="tunnel lift bulk bags.html">TUNNEL LIFT BULK BAGS</a></li>
                       <li><a href="Top attachement.html">TOP ATTACHMENTS</a></li>
                       <li><a href="bottom attachement.html">BOTTOM ATTACHMENTS</a></li>
-                      <li><a href="One and two Loop bags.html">ONE LOOP & TWO LOOP</a></li>
-                      <li><a href="bags and baffle bags.html">BAFFLE BAG AND LINERS</a></li>
-                    </ul>
+                      </ul>
                   </div>
                   <div class="row">
                     <header>SPECIAL BULK BAGS</header>
                     <ul class="mega-links">
-                      <li><a href="Food Garde baffle bags.html"> FOOD GRADE BAFFLE BAGS</a></li>
+                      <li><a href="bags and baffle bags.html"> BAFFLE BAGS</a></li>
                       <li><a href="type D bulk bags.html">TYPE D BAGS</a></li>
                       <li><a href="type c bulk bags.html">TYPE C BAGS</a></li>
                       <li><a href="Asbestos bags.html">ASBESTOS BAGS</a></li>
                       <li><a href="Un approved bags.html">UN APPROVED BAGS</a></li>
-                      <li><a href="Remote Release Bags with D locks.html"> REMOTE D LOCKS</a></li>
-                      <li><a href="PopUp loop bulk bags.html">Pop-Up Loop Bags</a></li>
-                    </ul>
+                </ul>
                   </div>
                   <div class="row">
                     <header>SACKS AND SMALL BAGS</header>
@@ -1198,13 +1194,12 @@
                       <li><a href="Borrow Bulk Bags.html">BORROW BAGS</a></li>
                       <li><a href="AD star bags.html">AD STAR BAGS </a></li>
                       <li><a href="mesh  Leno Bulk Bags.html"> LENO MESH BULK BAGS</a></li>
-                      <li><a href="ultra sonic Hemmed bags.html">ULTRA SONIC HEM BAGS</a></li>
-                      <li><a href="Top heat cut bags.html">TOP HEAT CUT BAGS</a></li>
-                    </ul>
+                   </ul>
                   </div>
               
             </li>
-            
+          
+            <li><a href="contact us.html">Brochers</a></li>
             <li><a href="contact us.html">Contact Us</a></li>
           </ul>
           <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
@@ -1263,12 +1258,9 @@
 			packaging solutions</h3>
                 
                  
-            <p>RDA Bulk Packaging Ireland Ltd. has all the experience from
-				RDA Bulk Packaging Ltd.a privately owned company that
-				has been trading for over 23 years.Our core business
-				is the importation and supply of Flexible Intermediate
-				Bulk Containers (FIBC's),otherwise known as bulk bags,
-				tote bags or tay bags.</p>
+            <p>A privately owned company that has been trading since its establishment in 1999. Our core business is the importation and supply of Flexible Intermediate Bulk Containers (FIBC’s), otherwise known as bulk bags, tote bags or tay bags.
+
+also supply products to customers in agricultural, chemical, recycling, waste management, building and many more business sectors.</p>
             <a href="index.html" class="btn">Explore</a>
         </div>
         </div>
@@ -1278,25 +1270,18 @@
 
 <!-- home section end -->
 
-
 <section class="deal">
 
     <div class="content">
        
-        <h1>RDA Bulk Packaging</h1>
-		<h3>
-			Welcome To RDA Bulk Packaging Ireland Ltd.</h3>
+        <h1>Welcome To RDA Bulk Packaging Ireland Ltd</h1>
+		
         <p>
 			RDA Bulk Packaging Ireland Ltd. Has All The Experience From RDA Bulk Packaging Ltd., Who Have Been Successfully Supplying A Comprehensive Range Of FIBC’s (Flexible Intermediate Bulk Containers), Also Known As Bulk Bags To Many Different Sectors Across The UK, For Over 23 Years And More Recently In Europe And Other Countries Worldwide. Our Teams Are Dedicated To Supplying You With The Best Packaging Solution For Your Business. Along With Bulk Bags We Also Supply Many Other Products Such As; Woven Polypropylene Sacks, Sandbags, Garden Waste/Kerbside Collection Bags, Polythene Bags, Liners And Many More. We Hold Stocks In Our Irish Warehouses For Both Immediate Delivery,
 			 And Also Those Products That Have Been Manufactured To Specific Requirements For Our Existing Customers That We Have Contracted With Them To Stock On Their Behalf.</p>
         <a href="index.html" class="btn">More About Us</a>
     </div>
 </section>
-
-
-
-
-
 
 
 <!-- reviews section starts  -->
@@ -1314,8 +1299,8 @@
                 <i class="fas fa-hotel"></i>
                 <div class="card-body">
                 <h3>manufacturing</h3>
-                <p>RDA utilise a number of manufacturing facilities in India. Each of which holds a
-                     valid certificate for the manufacture of bulk bags from the Indian Institute of Packaging..</p>
+                <p>RDA utilise a number of manufacturing facilities in India. Each of which holds a valid certificate for the manufacture of bulk bags from the Indian Institute of Packaging, 
+					Cotecna in India.</p>
                
             </div>
 
@@ -1326,9 +1311,9 @@
                 <div class="card">
                     <i class="fas fa-cubes"></i>
                     <div class="card-body">
-                <h3>Distribution</h3>
-                <p>RDA operates from warehousing facilities based in Co.
-                     Meath, Republic of Ireland.It involves activities such as transportation, warehousing, logistics, and retailing.</p>
+                <h3>Sales & Distribution</h3>
+                <p>RDA operates from offices in Berkeley, Gloucestershire and Indore, 
+					India and distributes from warehousing facilities based in Worcestershire and Staffordshire, United Kingdom</p>
                 </div>
 
             </div>
@@ -1339,29 +1324,17 @@
                     <i class="fas fa-handshake"></i>
                     <div class="card-body">
                 <h3>Partner Company</h3>
-                <p>RDA works closely with its freight forward companies to help maintain an excellent delivery service which allows us to offer deliveries across the Ireland & Europe.</p>
+                <p>RDA works closely with its freight forward companies to help maintain an
+					 excellent delivery service which allows us to offer deliveries across the United Kingdom & Europe.</p>
+				
                 </div>
 
             </div>
             </div>
+			</div>
+			</div>
+		
             
-                </div>
-
-            </div>
-            </div>
-
-            
-                </div>
-
-            </div>
-            </div>
-
-            
-            </div>
-
-        </div>
-
-    </div>
     
 </section>
 
@@ -1379,13 +1352,16 @@
         <p>1. Consistently supply a fully certified quality product.
 			<br>2. Offer a competitive price.
 			<br>3. Offer a complete inventory management system for all your FIBC requirements.
-			<br>4. Hold 6 months of your required stock in our Irish warehouses; reducing lead times and helping with your cash flow.
+			<br>4. Hold 6 months of your required stock in our UK
+			warehouses; reducing lead times and helping with
+			your cash flow.
+			
 			<br>5. Allocate a trained Member of our team to look after all your requirements.</p>
        
     </div>
 
     <div class="image">
-        <img src="images/Extrusion-Machine-1.jpg" alt="">
+        <img src="img/lifestyle-ecofriendly-people (1).jpg" alt="">
     </div>
 
 </section>
@@ -1396,83 +1372,79 @@
 
 <section class="footer">
 
-    <div class="box-container">
-
-        <div class="box">
-            <h3>our locations</h3>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Ireland </a>
-            
-            
-        </div>
-
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i>home</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>about</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>services</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>products</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
-        </div>
-
-        <div class="box">
-            <h3>extra links</h3>
-           
-            <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
-           
-            <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+	<div class="box-container">
+  
+		<div class="box">
+			<h3>our locations</h3>
+			<a href="#"> <i class="fas fa-map-marker-alt"></i> RDA Bulk Packaging Ltd
+			 <br> Severn Business Park
+			  <br>Burma Road
+			  Sharpness
+			  Berkeley
+			  Gloucestershire
+			  GL13 9UQ, UK </a>
+			<a href="#"> <i class="fas fa-clock"></i>  Working : Mon-Fri (08:30 - 17:00) </a>
+			
+			
+		</div>
+  
+		<div class="box">
+			<h3>quick links</h3>
+			<a href="#"> <i class="fas fa-arrow-right"></i>home</a>
+			<a href="#"> <i class="fas fa-arrow-right"></i>about</a>
+			<a href="#"> <i class="fas fa-arrow-right"></i>services</a>
+			<a href="#"> <i class="fas fa-arrow-right"></i>products</a>
+			<a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+		</div>
+  
+		<div class="box">
+			<h3>extra links</h3>
+		   
+			<a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+		   
+			<a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
    
-
+  
   </div>
   <div class="box">
-            <h3>contact info</h3>
-            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-            <a href="#"> <i class="fas fa-envelope"></i>info@rda-ireland.ie</a>
-            
-        
-    </div>
+			<h3>contact info</h3>
+			
+			<a href="#"> <i class="fas fa-phone"></i> Tel: +44 (0) 1453 511222 </a>
+			<a href="#"> <i class="fas fa-envelope"></i>Email: info@rdapackaging.com</a>
+			<a href="#">Registered number: 03836432</a>
+			
+		
+	</div>
+  
+  
+	<div class="share">
+		<a href="https://www.linkedin.com/company/90670731/admin/feed/posts/" class="fab fa-linkedin"></a>
+		<a href="https://www.facebook.com/RDABulkPackagingIrelandLtd" class="fab fa-facebook-f"></a>
+		<a href="https://twitter.com/home" class="fab fa-twitter"></a>
+		<a href="https://l.instagram.com/?u=http%3A%2F%2Frda-ireland.ie%2F&e=AT2SZzFvFHXNN4SdjpMH1cQmy5M96xv3xvvZqL-jGaNUOIgULUNDN3-SkPDcuzH-wAyhZAJOSywjo64SUc_alnsQ8XWAs85iAraRvXs" class="fab fa-instagram"></a>
+	   
+		
+	</div>
+  </div>
+	<div class="credit"> created by <span> 2024 RDA Bulk Packaging Ireland Private Limited</span> | all rights reserved! </div>
+  
+  </section>
+  
+  <!-- footer section ends -->
+  
 
-
-    <div class="share">
-		       <a href="https://www.linkedin.com/company/90670731/admin/feed/posts/" class="fab fa-linkedin"></a>
-        <a href="https://www.facebook.com/RDABulkPackagingIrelandLtd" class="fab fa-facebook-f"></a>
-        <a href="https://twitter.com/home" class="fab fa-twitter"></a>
-        <a href="https://l.instagram.com/?u=http%3A%2F%2Frda-ireland.ie%2F&e=AT2SZzFvFHXNN4SdjpMH1cQmy5M96xv3xvvZqL-jGaNUOIgULUNDN3-SkPDcuzH-wAyhZAJOSywjo64SUc_alnsQ8XWAs85iAraRvXs" class="fab fa-instagram"></a>
- 
-     
-    </div>
-</div>
-    <div class="credit"> created by <span> 2024 RDA Bulk Packaging Ireland Private Limited</span> | all rights reserved! </div>
-
-</section>
-
-<!-- footer section ends -->
 
 <!-- loader  -->
 
 <div class="loader-container">
-    <img src="image/loader-img.gif" alt="">
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
-</body>
-</html>
+	<video src="image/videoUK.mp4" autoplay muted loop> </video>
+  </div>
+  
+  
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  
+  <!-- custom js file link  -->
+  <script src="js/script.js"></script>
+  
+  </body>
+  </html>
