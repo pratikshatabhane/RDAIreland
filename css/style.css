@@ -148,10 +148,11 @@ section{
     margin-top: 1rem;
     display:inline-block;
     padding:.9rem 3rem;
+    justify-content: space-around;
     border-radius: 1.7rem;
-    color:#fff;
+    color:#e2e832;
     background:var(--green);
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     cursor: pointer;
     font-weight: 500;
 }
