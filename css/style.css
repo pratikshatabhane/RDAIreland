@@ -16,6 +16,7 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
+    
     transition:all .2s linear;
     transition: width none;
 }
@@ -148,7 +149,7 @@ section{
     margin-top: 1rem;
     display:inline-block;
     padding:.9rem 3rem;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 1.7rem;
     color:#e2e832;
     background:var(--green);
