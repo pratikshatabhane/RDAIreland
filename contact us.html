@@ -24,7 +24,7 @@
             box-sizing: border-box;
             outline: none; border:none;
             text-decoration: none;
-           
+            text-transform: lowercase;
             transition:all .2s linear;
             transition:width none;
         }
@@ -154,16 +154,17 @@
         }
         
         .btn{
-            margin-top: 1rem;
-            display:inline-block;
-            padding:.9rem 3rem;
-            border-radius: 1.7rem;
-            color:#fff;
-            background:var(--green);
-            font-size: 1.7rem;
-            cursor: pointer;
-            font-weight: 500;
-        }
+    margin-top: 1rem;
+    display:inline-block;
+    padding:.9rem 3rem;
+    justify-content: space-between;
+    border-radius: 1.7rem;
+    color:#e2e832;
+    background:var(--green);
+    font-size: 2.5rem;
+    cursor: pointer;
+    font-weight: 500;
+}
         
         .btn:hover{
             background:var(--dark-color);
@@ -1034,7 +1035,7 @@
 
     <div class="header-0">
        
-        <a href="index.html" class="logo"><img src="image/RDA New Logo.jpg" alt=""></a>
+        <a href="index.html" class="logo"><img src="image/logo-01.png" alt=""> </a>
         <div class="header-1">
         <form action="" class="search-form">
             <input type="search" name="" placeholder="search here..." id="search-box">
@@ -1043,11 +1044,19 @@
 
         <div class="icons">
             <div id="search-btn" class="fas fa-search"></div>
+            
 
             <div id="login-btn" class="fas fa-user"></div>
         </div>
+        </div>
+           <a href="Shop page - Copy.html"  class="btn"><i class="fa fa-shopping-basket" aria-hidden="true">OnlineShop</i></a>
+           
+        </div>
+        
     </div>
+    
 </div>
+
    <div class="header-2">
         
     <nav>
@@ -1057,7 +1066,7 @@
           <input type="radio" name="slider" id="close-btn">
           <ul class="nav-links">
             <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li>
                 <a href="about.html" class="desktop-item">About</a>
                 <input type="checkbox" id="showDrop">
@@ -1065,14 +1074,16 @@
                
              <ul class="drop-menu">
                           <li><a href="about.html">About Company</a></li>
-                          <li><a href="100%rpp.html">100% RPP</a></li>
+                          <li><a href="RPP.html">100% RPP</a></li>
                           <li><a href="sustainability.html">Sustainability</a></li>
                           <li><a href="circular.html">Circular Economy</a></li>
                         </ul>
                    
               </li>
-              
+        
               <li><a href="SERVICES (2).html">Services</a></li>
+            
+           <li>
             <li>
               <a href="Industries.html" class="desktop-item">Industries</a>
               <input type="checkbox" id="showMega">
@@ -1102,8 +1113,7 @@
                     </ul>
                   </div>
                   <div class="row">
-                   
-                    <ul class="mega-links">
+                   <ul class="mega-links">
                       <li><a href="Mining and Quarrying.html">Mining and quarrying</a></li>
                       <li><a href="Building & Construction.html">Building and Construction</a></li>
                       <li><a href="Forestry and Timber.html">Forestry and Timber</a></li>
@@ -1114,7 +1124,7 @@
               </div>
               </li>
               <li>
-              <a href="#" class="desktop-item">All Products</a>
+              <a href="All Products page.html" class="desktop-item">All Products</a>
               <input type="checkbox" id="showMega">
               <label for="showMega" class="mobile-item">Mega Menu</label>
               <div class="mega-box">
@@ -1130,21 +1140,17 @@
                       <li><a href="tunnel lift bulk bags.html">TUNNEL LIFT BULK BAGS</a></li>
                       <li><a href="Top attachement.html">TOP ATTACHMENTS</a></li>
                       <li><a href="bottom attachement.html">BOTTOM ATTACHMENTS</a></li>
-                      <li><a href="One and two Loop bags.html">ONE LOOP & TWO LOOP</a></li>
-                   
-                    </ul>
+                      </ul>
                   </div>
                   <div class="row">
                     <header>SPECIAL BULK BAGS</header>
                     <ul class="mega-links">
-                      <li><a href="Food Garde baffle bags.html"> FOOD GRADE BAFFLE BAGS</a></li>
+                      <li><a href="Food Garde baffle bags.html"> BAFFLE BAGS</a></li>
                       <li><a href="type D bulk bags.html">TYPE D BAGS</a></li>
                       <li><a href="type c bulk bags.html">TYPE C BAGS</a></li>
                       <li><a href="Asbestos bags.html">ASBESTOS BAGS</a></li>
                       <li><a href="Un approved bags.html">UN APPROVED BAGS</a></li>
-                      <li><a href="Remote Release Bags with D locks.html"> REMOTE D LOCKS</a></li>
-                   
-                    </ul>
+                </ul>
                   </div>
                   <div class="row">
                     <header>SACKS AND SMALL BAGS</header>
@@ -1154,9 +1160,7 @@
                       <li><a href="Borrow Bulk Bags.html">BORROW BAGS</a></li>
                       <li><a href="AD star bags.html">AD STAR BAGS </a></li>
                       <li><a href="mesh  Leno Bulk Bags.html"> LENO MESH BULK BAGS</a></li>
-                      <li><a href="ultra sonic Hemmed bags.html">ULTRA SONIC HEM BAGS</a></li>
-                
-                    </ul>
+                   </ul>
                   </div>
               
             </li>
@@ -1251,7 +1255,7 @@
                 <br>
                 <div class="inputBox">
                     <input type="text" required="required">
-                    <span>Eamil</span>
+                    <span>Email</span>
                 </div>
                 <br>
                 <br>
@@ -1275,23 +1279,31 @@
     <div class="box-container">
 
         <div class="box">
-            <h3>our locations</h3>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Ireland </a>
+          
+            <h3>Locations</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> RDA Bulk Packaging Ireland Ltd
+                74 Northumberland Road
+                Ballsbridge
+                Dublin 4
+                County Dublin
+                D04 XF75
+                Republic of Ireland</a>
+            <a href="#"> <i class="fas fa-clock"></i>  Working : Mon-Fri (08:30 - 17:00) </a>
             
             
         </div>
 
         <div class="box">
-            <h3>quick links</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i>home</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>about</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>services</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>products</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+            <h3>Abour Us</h3>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i>home</a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i>about</a>
+            <a href="SERVICES (2).html"> <i class="fas fa-arrow-right"></i>services</a>
+            <a href="All Products page.html"> <i class="fas fa-arrow-right"></i>products</a>
+            <a href="contact us.html"> <i class="fas fa-arrow-right"></i>contact</a>
         </div>
 
         <div class="box">
-            <h3>extra links</h3>
+            <h3>Extra Links</h3>
            
             <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
            
@@ -1300,8 +1312,8 @@
 
   </div>
   <div class="box">
-            <h3>contact info</h3>
-            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <h3>Contact Info</h3>
+            
             <a href="#"> <i class="fas fa-phone"></i> 0300 373 0194 </a>
             <a href="#"> <i class="fas fa-envelope"></i>info@rda-ireland.ie</a>
             
@@ -1323,25 +1335,6 @@
 </section>
 
 <!-- footer section ends -->
-
-<!-- loader  -->
-
-<div class="loader-container">
-    <img src="image/loader-img.gif" alt="">
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
